@@ -1,52 +1,30 @@
 "use client";
 
-import { useEffect } from "react";
-import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { useEffect, useState } from "react";
+import { NeutralFace } from "./fonts";
 
 export default function Header() {
-  useEffect(() => {
-    let lastScrollTop = 0;
-    const header = document.getElementById("header");
-
-    const handleScroll = () => {
-      const scrollPos = window.scrollY;
-
-      if (scrollPos > lastScrollTop) {
-        // Scrolling down
-        header.style.opacity = "0";
-      } else {
-        // Scrolling up
-        header.style.opacity = "1";
-      }
-      lastScrollTop = scrollPos;
-    };
-
-    // Add scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup function to remove event listeners
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <header id="header" className={`${NeutralFace.className}`}>
       <div className="header-container blocco">
-        <a id="logo" className="link-btn" href="#top">
-          vantaBlack
+        <a id="logo" className="link-btn" href="/">
+          KRONOS
         </a>
         <div className="header-anchors">
-          <a className="link link-btn" href="#projects">
-            PROJECTS
+          <a className="link link-btn" href="/shop">
+            SHOP
           </a>
-          <a className="link link-btn" href="#about">
+          {/* <a id="openButton" className="link link-btn">
+            COLLECTIONS
+          </a> */}
+          <a className="link link-btn" href="/about">
             ABOUT
           </a>
           <a className="link link-btn" href="#footer">
             CONTACT
           </a>
         </div>
+        <a className="link link-btn">CART</a>
       </div>
     </header>
   );

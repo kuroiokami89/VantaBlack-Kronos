@@ -1,12 +1,14 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { NeutralFace, NeutralFaceBold } from "../components/fonts";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
+export default function ProjectItem({ link, imgClass, brand, model, price }) {
   const projectRef = useRef(null);
 
   useEffect(() => {
@@ -31,13 +33,12 @@ export default function ProjectItem({ link, imgClass, spanText, h3Text }) {
   }, []);
 
   return (
-    <a href={link} className="project">
-      <div ref={projectRef}>
-        <div className={`project-img ${imgClass}`}></div>
-        <div className="project-text">
-          <span className={`${NeutralFace.className}`}>{spanText}</span>
-          <h3 className={`${NeutralFaceBold.className}`}>{h3Text}</h3>
-        </div>
+    <a href={link} className="shop-item">
+      <img className="shop-item-img" src={`${imgClass}`} />
+      <div className="shop-item-text">
+        <span className={`${NeutralFace.className}`}>BRAND : {brand}</span>
+        <span className={`${NeutralFace.className}`}>MODEL : {model}</span>
+        <span className={`${NeutralFace.className}`}>PRICE : {price}</span>
       </div>
     </a>
   );
