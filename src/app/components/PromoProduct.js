@@ -4,9 +4,7 @@ import styled from "styled-components";
 import { NeutralFace } from "./fonts";
 
 const StyledPromoProduct = styled.div`
-  #promo-product {
-    display: flex;
-  }
+  display: flex;
 
   .promo-product-text {
     display: flex;
