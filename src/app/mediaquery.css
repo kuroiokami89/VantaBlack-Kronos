@@ -121,6 +121,14 @@
   .shop-item-img {
     width: 300px;
   }
+
+  #promo-product {
+    flex-direction: column;
+  }
+
+  #promo-product img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -137,11 +145,11 @@
 
   h1 {
     line-height: 50px;
-    font-size: 3rem !important;
+    font-size: 2.3rem !important;
   }
 
   h2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     line-height: unset;
     margin-bottom: 20px !important;
     line-height: 1.1;
@@ -157,6 +165,11 @@
     font-size: 1.3rem;
   }
 
+  .content-span,
+  span {
+    font-size: 1.1rem;
+  }
+
   #header {
     font-size: 0.85rem !important;
   }
@@ -166,7 +179,11 @@
   }
 
   .header-anchors {
-    gap: 10px;
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
   }
 
   .blocco {
@@ -194,11 +211,11 @@
   }
 
   #footer {
+    flex-direction: column;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh !important;
-    gap: 55px;
+    justify-content: center;
+    height: 50vh !important;
+    gap: 50px;
   }
 
   .email {
@@ -221,13 +238,13 @@
   .shop-item-img {
     width: 250px;
   }
+
+  #row-products-container {
+    gap: 80px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  #footer {
-    height: 100vh !important;
-  }
-
   .shop-item {
     padding: 10px;
   }

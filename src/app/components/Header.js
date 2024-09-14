@@ -24,6 +24,9 @@ export default function Header() {
             CONTACT
           </a>
         </div>
+        <div className="mobile-menu">
+          <a>MENU</a>
+        </div>
         <a className="link link-btn">CART</a>
       </div>
     </header>

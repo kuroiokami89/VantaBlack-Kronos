@@ -124,6 +124,10 @@ p {
   gap: 30px;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 #header .link-btn {
   font-size: 1.05rem;
 }

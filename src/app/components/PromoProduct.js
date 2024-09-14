@@ -4,7 +4,9 @@ import styled from "styled-components";
 import { NeutralFace } from "./fonts";
 
 const StyledPromoProduct = styled.div`
-  display: flex;
+  #promo-product {
+    display: flex;
+  }
 
   .promo-product-text {
     display: flex;
@@ -26,7 +28,7 @@ const StyledPromoProduct = styled.div`
 }
 export default function PromoProduct({ img, title, text, button }) {
   return (
-    <StyledPromoProduct>
+    <StyledPromoProduct id="promo-product">
       <img src={img} alt={title} />
       <div className={`promo-product-text ${NeutralFace.className}`}>
         <h2>{title}</h2>
