@@ -1,19 +1,7 @@
 @media screen and (max-width: 1750px) {
-  .project-container {
-    column-gap: 0;
-  }
 }
 
 @media screen and (max-width: 1450px) {
-  .blocco,
-  #footer {
-    margin: 0 5%;
-  }
-
-  .project-list {
-    row-gap: 200px;
-  }
-
   h1 {
     font-size: 5rem;
     line-height: 1.05;
@@ -23,27 +11,6 @@
     font-size: 6.5rem;
     line-height: 1.05;
   }
-
-  #projects h2 {
-    font-size: 5.5rem;
-  }
-
-  .project-img {
-    width: 500px;
-    height: 650px;
-  }
-
-  .social-links {
-    gap: 190px;
-  }
-
-  .email {
-    font-size: 12rem;
-  }
-
-  #about {
-    margin-bottom: 0 !important;
-  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -51,65 +18,10 @@
     font-size: 3.5rem !important;
   }
 
-  #header .blocco {
-    margin-bottom: 0 !important;
-  }
-
-  #footer {
-    margin: 0 30px;
-  }
-
-  #projects h2 {
-    margin-left: 0;
-  }
-
-  .project-container {
-    flex-direction: column;
-  }
-
-  .project-img {
-    width: 100%;
-    height: 500px;
-  }
-
-  .project-list-right {
-    margin-top: 100px;
-  }
-
-  .project-list-left,
-  .project-list-right {
-    row-gap: 100px;
-  }
-
-  .header-links img {
-    max-width: 43px;
-  }
-
   .header-container {
     width: 100%;
     row-gap: 50px;
     padding: 20px 30px;
-  }
-
-  .header-container img {
-    margin-top: 10px;
-  }
-
-  .project-list-carousel {
-    width: 100% !important;
-  }
-
-  .project-list {
-    flex-direction: column;
-  }
-
-  .project-list-carousel {
-    overflow: hidden !important;
-  }
-
-  #projects {
-    margin: 0 30px;
-    text-align: left;
   }
 
   .shop-item {
@@ -186,40 +98,12 @@
     display: block;
   }
 
-  .blocco {
-    margin-bottom: 150px !important;
-    margin: 0;
-  }
-
-  #about {
-    margin-top: 0;
-    margin-bottom: 150px !important;
-  }
-
-  .about-container {
-    flex-direction: column;
-    margin-top: 50px;
-    gap: 30px;
-  }
-
-  .about-title-container h2 {
-    margin: 0 !important;
-  }
-
-  #about br {
-    display: none;
-  }
-
   #footer {
     flex-direction: column;
     text-align: center;
     justify-content: center;
     height: 50vh !important;
     gap: 50px;
-  }
-
-  .email {
-    font-size: 6.5rem;
   }
 
   .social-links {

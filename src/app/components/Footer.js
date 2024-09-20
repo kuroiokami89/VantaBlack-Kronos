@@ -1,10 +1,12 @@
 "use client";
 
 import { NeutralFace } from "./fonts";
+import TextBlock from "./TextBlock";
 
 export default function Footer() {
   return (
     <>
+      <TextBlock title={"WHANT TO GET UPDATES ?"} backgroundColor="#28282b" />
       <div className="input-class">
         <input type="text" placeholder="NEWSLETTER SIGNUP" name="name" />
       </div>

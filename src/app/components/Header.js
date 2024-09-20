@@ -1,9 +1,22 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NeutralFace } from "./fonts";
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState({
+    mobileMenu: false,
+    cart: false,
+  });
+
+  // Function to toggle both mobile menu and cart
+  const toggleElement = (element) => {
+    setIsOpen((prevState) => ({
+      ...prevState,
+      [element]: !prevState[element],
+    }));
+  };
+
   return (
     <header id="header" className={`${NeutralFace.className}`}>
       <div className="header-container blocco">
@@ -14,9 +27,6 @@ export default function Header() {
           <a className="link link-btn" href="/shop">
             SHOP
           </a>
-          {/* <a id="openButton" className="link link-btn">
-            COLLECTIONS
-          </a> */}
           <a className="link link-btn" href="/about">
             ABOUT
           </a>
@@ -25,9 +35,66 @@ export default function Header() {
           </a>
         </div>
         <div className="mobile-menu">
-          <a>MENU</a>
+          <a
+            className="link link-btn"
+            onClick={() => toggleElement("mobileMenu")}
+          >
+            MENU
+          </a>
         </div>
-        <a className="link link-btn">CART</a>
+        <a className="link link-btn" onClick={() => toggleElement("cart")}>
+          CART
+        </a>
+      </div>
+
+      {/* Cart Section */}
+      <div
+        className={`cart-menu menu-dropdown ${isOpen.cart ? "open" : "closed"}`}
+      >
+        <div className="cart-row">
+          <img className="cart-img" src="/Rolex.png" />
+          <div className="cart-text">
+            <span>ROLEX</span>
+            <span>Sky Dweller</span>
+          </div>
+          <span>10.000 $</span>
+        </div>
+        <div className="cart-row">
+          <img className="cart-img" src="/Rolex.png" />
+          <div className="cart-text">
+            <span>ROLEX</span>
+            <span>Sky Dweller</span>
+          </div>
+          <span>10.000 $</span>
+        </div>
+        <div className="cart-checkout">
+          <h3>SUBTOTAL</h3>
+          <div>
+            <h3>20.000 $</h3>
+            <p>
+              Tax included and shipping <br />
+              calculated at checkout
+            </p>
+          </div>
+        </div>
+        <a className="checkout-btn">PROCEED TO checkout</a>
+      </div>
+
+      {/* Mobile Menu Section */}
+      <div
+        className={`mobile-menu menu-dropdown ${
+          isOpen.mobileMenu ? "open" : "closed"
+        }`}
+      >
+        <a className="link link-btn" href="/shop">
+          SHOP
+        </a>
+        <a className="link link-btn" href="/about">
+          ABOUT
+        </a>
+        <a className="link link-btn" href="#footer">
+          CONTACT
+        </a>
       </div>
     </header>
   );

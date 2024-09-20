@@ -29,7 +29,7 @@ html {
 /* Body styles */
 body {
   font-size: 14px;
-  color: #fff;
+  color: #faf9f6;
   background: #080808;
   width: 100%;
   min-height: 100vh; /* Ensure body covers the full viewport height */
@@ -56,7 +56,7 @@ a {
 }
 
 .link-btn {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 100;
   text-decoration: unset !important;
   position: relative;
@@ -98,7 +98,6 @@ p {
 
 /** INZIO STILE HEADER **/
 #header {
-  font-size: 1rem;
   overflow-x: hidden;
   position: fixed;
   top: 30px;
@@ -108,14 +107,15 @@ p {
   z-index: 99;
   /* background-color: rgba(0, 0, 0, 0.75); */
   background: #161616;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-container {
-  font-size: 1.2rem;
   display: flex;
   justify-content: center;
-  gap: 150px;
-  padding: 15px 40px;
+  gap: 100px;
   margin-bottom: 0 !important;
 }
 
@@ -128,24 +128,54 @@ p {
   display: none;
 }
 
-#header .link-btn {
-  font-size: 1.05rem;
+/* Cart container */
+.menu-dropdown {
+  border-top: 1px solid #28282b;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-#menu-overlay {
-  display: none;
-  font-size: 1.2rem;
-  padding: 30px 40px;
+/* When the cart is open, slide down and fade in */
+.menu-dropdown.open {
+  margin-top: 50px;
+  max-height: 1000px; /* Adjust to the height of your cart content */
+  opacity: 1;
+}
+
+/* When the cart is closed, slide up and fade out */
+.menu-dropdown.closed {
+  max-height: 0;
+  opacity: 0;
+}
+
+.cart-row {
+  padding: 30px 0;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
+  gap: 100px;
+  border-bottom: 1px solid #28282b;
+}
+
+.cart-img {
+  width: 100px;
+}
+
+.cart-checkout {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-checkout p {
+  margin-top: 20px;
+  font-size: 0.9rem;
 }
 /** FINE STILE HEADER **/
 
 /** INIZIO STILE FOOTER **/
 #footer {
-  padding: 50px;
+  padding: 200px;
   font-size: 1.3rem;
   display: flex;
   align-items: center;
@@ -194,7 +224,6 @@ p {
   flex-direction: column;
   text-align: center;
   z-index: 1; /* Content stays above the video */
-  color: white;
 }
 
 .content-span {
@@ -239,7 +268,6 @@ p {
 #shop {
   margin-top: 170px;
   margin-bottom: 150px;
-  height: 100%;
 }
 
 #shop h1 {
@@ -275,7 +303,8 @@ li {
   width: fit-content;
 }
 
-.buy-btn {
+.buy-btn,
+.checkout-btn {
   background: #f0f0f0;
   color: #000;
 }
