@@ -27,10 +27,10 @@ export default function Header() {
           KRONOS
         </a>
         <div className="header-anchors">
-          <a className="link link-btn" href="/Shop">
+          <a className="link link-btn" href="/shop">
             SHOP
           </a>
-          <a className="link link-btn" href="/About">
+          <a className="link link-btn" href="/about">
             ABOUT
           </a>
           <a className="link link-btn" href="#footer">
