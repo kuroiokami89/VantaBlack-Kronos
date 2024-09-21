@@ -1,15 +1,11 @@
 import { NeutralFace, NeutralFaceBold } from "../components/fonts";
+import Intro from "../components/Intro";
 
 export default function Product() {
   return (
     <div className={`prd-page ${NeutralFace.className}`}>
-      <img
-        class="prd-img"
-        src="/Rolex.png"
-        height="500"
-        alt="ROLEX SUBMARINER HULK 116610LV"
-      />
-      <div class="prd-page-right">
+      <Intro video={"/Intro.mp4"} height={"85vh"} title={""} subTitle={""} />
+      <div class="prd-page-right blocco">
         <div class="prd-description">
           <h1 class="prd-title">ROLEX SUBMARINER HULK // 116610LV</h1>
           <h2>Descrizione</h2>
@@ -32,7 +28,7 @@ export default function Product() {
 
         <div class="prd-specs">
           <h2>Caratteristiche</h2>
-          <ul className={`${NeutralFace.className}`}>
+          <ul>
             <li>Marca: Rolex</li>
             <li>Modello: Submariner</li>
             <li>Referenza: 116610LV</li>
@@ -68,12 +64,9 @@ export default function Product() {
             href="https://www.watchclub.com/rolex/submariner-date/116610lv-finalseries-ref-116610lv-year-2020"
             target="_blank"
           >
-            ACQUISTA NELLO SHOP <i class="fa-solid fa-bag-shopping"></i>
+            AGGIUNGI AL CARRELLO
           </a>
         </div>
-        <a class="btn" href="index.html">
-          RITORNA NELLA HOMEPAGE <i class="fa-solid fa-house"></i>
-        </a>
       </div>
     </div>
   );

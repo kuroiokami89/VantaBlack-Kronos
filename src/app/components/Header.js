@@ -19,15 +19,15 @@ export default function Header() {
 
   return (
     <header id="header" className={`${NeutralFace.className}`}>
-      <div className="header-container blocco">
+      <div className="header-container">
         <a id="logo" className="link-btn" href="/">
           KRONOS
         </a>
         <div className="header-anchors">
-          <a className="link link-btn" href="/shop">
+          <a className="link link-btn" href="/Shop">
             SHOP
           </a>
-          <a className="link link-btn" href="/about">
+          <a className="link link-btn" href="/About">
             ABOUT
           </a>
           <a className="link link-btn" href="#footer">
@@ -75,12 +75,12 @@ export default function Header() {
           <h3>SUBTOTAL</h3>
           <div>
             <h3>20.000 $</h3>
-            <p>
-              Tax included and shipping <br />
-              calculated at checkout
-            </p>
           </div>
         </div>
+        {/* 
+          FARE IL TASTO SLIDER -> SLIDE TO PAY
+          LINK : https://github.com/A-Rehman01/react-slide-button
+        */}
         <a className="checkout-btn">PROCEED TO checkout</a>
       </div>
 
@@ -90,10 +90,10 @@ export default function Header() {
           isOpen.mobileMenu ? "open" : "closed"
         }`}
       >
-        <a className="link link-btn" href="/shop">
+        <a className="link link-btn first-link" href="/Shop">
           SHOP
         </a>
-        <a className="link link-btn" href="/about">
+        <a className="link link-btn" href="/About">
           ABOUT
         </a>
         <a className="link link-btn" href="#footer">

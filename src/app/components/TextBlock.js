@@ -5,7 +5,8 @@ import { NeutralFace, NeutralFaceBold } from "../components/fonts";
 
 const StyledTextBlock = styled.div`
   padding: 100px 50px;
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${(props) =>
+    props.$backgroundColor}; // Use $ for transient props
 
   .text-block-container {
     display: flex;
@@ -23,7 +24,7 @@ export default function TextBlock({ title, text, backgroundColor }) {
   return (
     <StyledTextBlock
       className={`${NeutralFace.className}`}
-      backgroundColor={backgroundColor}
+      $backgroundColor={backgroundColor} // Use $ here as well
       fontFamily={NeutralFace.className}
     >
       <div className="text-block-container">

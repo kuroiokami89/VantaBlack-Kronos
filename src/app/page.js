@@ -8,7 +8,12 @@ import TextBlock from "./components/TextBlock";
 export default function Home() {
   return (
     <>
-      <Intro />
+      <Intro
+        video={"/Intro.mp4"}
+        height={"100vh"}
+        title={"Discover Timeless Elegance with Kronos"}
+        subTitle={"SHOP BASED IN EUROPE - ITALY"}
+      />
       <PromoProduct
         img="/Rolex-Sky-Dweller.jpg"
         title="Rolex Sky Dweller"
