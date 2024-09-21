@@ -87,13 +87,11 @@
   }
 
   #header {
-    left: 47%;
     font-size: 0.85rem !important;
   }
 
   .header-container {
     gap: 40px;
-    padding: 0;
   }
 
   .cart {
