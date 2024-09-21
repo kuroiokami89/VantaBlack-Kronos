@@ -13,11 +13,6 @@ const StyledTextBlock = styled.div`
     flex-direction: column;
     gap: 25px;
   }
-
-  p {
-    font-size: 1.35rem;
-    line-height: 2.2;
-  }
 `;
 
 export default function TextBlock({ title, text, backgroundColor }) {
