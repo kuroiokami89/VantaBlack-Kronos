@@ -255,8 +255,21 @@ p {
 
 .shop-buttons {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buy-btn {
+  font-size: 1.2rem;
+  background: #faf9f6;
+  color: #28282b;
+  padding: 15px 25px;
+  transition: background 0.45s ease-in, color 0.45s ease-in;
+}
+
+.buy-btn:hover {
+  background: #28282b;
+  color: #faf9f6;
 }
 
 .line {
@@ -265,14 +278,21 @@ p {
 }
 
 .prd-title {
-  margin-bottom: 50px;
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
 }
 
 .prd-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
+}
+
+.prd-page p {
+  font-size: 1.7rem;
+  line-height: 1.7;
 }
 
 /* FINE STILE PRODUCT PAGE */

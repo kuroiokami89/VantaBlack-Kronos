@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { NeutralFace } from "./fonts";
+import SlideButton from "react-slide-button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState({
@@ -16,6 +17,8 @@ export default function Header() {
       [element]: !prevState[element],
     }));
   };
+
+  const [reset, setReset] = useState(0);
 
   return (
     <header id="header" className={`${NeutralFace.className}`}>
@@ -81,7 +84,15 @@ export default function Header() {
           FARE IL TASTO SLIDER -> SLIDE TO PAY
           LINK : https://github.com/A-Rehman01/react-slide-button
         */}
-        <a className="checkout-btn">PROCEED TO checkout</a>
+        {/* <a className="checkout-btn">PROCEED TO checkout</a> */}
+        <SlideButton
+          mainText="PROCEED TO checkout"
+          overlayText=""
+          onSlideDone={function () {
+            console.log("Done!");
+          }}
+          reset={reset}
+        />
       </div>
 
       {/* Mobile Menu Section */}
