@@ -96,10 +96,10 @@ export default function Header() {
           isOpen.mobileMenu ? "open" : "closed"
         }`}
       >
-        <a className="link link-btn" href="/Shop">
+        <a className="link link-btn first-link" href="/shop">
           SHOP
         </a>
-        <a className="link link-btn" href="/About">
+        <a className="link link-btn" href="/about">
           ABOUT
         </a>
         <a className="link link-btn" href="#footer">
