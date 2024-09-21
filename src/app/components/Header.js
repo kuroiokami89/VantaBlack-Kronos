@@ -1,17 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react"; // Added useEffect import
 import { NeutralFace } from "./fonts";
 import SlideButton from "react-slide-button";
 
 export default function Header() {
-  useEffect(() => {
-    // This will only run on the client side
-    if (typeof document !== "undefined") {
-      // Your code that uses the document object
-    }
-  }, []); // empty dependency array ensures this runs only on mount
-
   const [isOpen, setIsOpen] = useState({
     mobileMenu: false,
     cart: false,
@@ -87,15 +80,10 @@ export default function Header() {
             <h3>20.000 $</h3>
           </div>
         </div>
-        {/* 
-          FARE IL TASTO SLIDER -> SLIDE TO PAY
-          LINK : https://github.com/A-Rehman01/react-slide-button
-        */}
-        {/* <a className="checkout-btn">PROCEED TO checkout</a> */}
         <SlideButton
           mainText="PROCEED TO checkout"
           overlayText=""
-          onSlideDone={function () {
+          onSlideDone={() => {
             console.log("Done!");
           }}
           reset={reset}
