@@ -54,18 +54,22 @@ export default function Header() {
         <div className="cart-row">
           <img className="cart-img" src="/Rolex.png" />
           <div className="cart-text">
-            <span>ROLEX</span>
-            <span>Sky Dweller</span>
+            <div>
+              <span>ROLEX</span>
+              <span>Sky Dweller</span>
+            </div>
+            <span>10.000 $</span>
           </div>
-          <span>10.000 $</span>
         </div>
         <div className="cart-row">
           <img className="cart-img" src="/Rolex.png" />
           <div className="cart-text">
-            <span>ROLEX</span>
-            <span>Sky Dweller</span>
+            <div>
+              <span>ROLEX</span>
+              <span>Sky Dweller</span>
+            </div>
+            <span>10.000 $</span>
           </div>
-          <span>10.000 $</span>
         </div>
         <div className="cart-checkout">
           <h3>SUBTOTAL</h3>

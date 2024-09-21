@@ -161,6 +161,16 @@ p {
   width: 100px;
 }
 
+.cart-text {
+  display: flex;
+  gap: 100px;
+}
+
+.cart-text > div {
+  display: flex;
+  flex-direction: column;
+}
+
 .cart-checkout {
   margin-top: 50px;
   display: flex;

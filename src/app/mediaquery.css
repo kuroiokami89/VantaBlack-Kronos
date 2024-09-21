@@ -20,8 +20,12 @@
 
   .header-container {
     width: 100%;
-    row-gap: 50px;
+    gap: 50px;
     padding: 20px 30px;
+  }
+
+  .menu-dropdown {
+    width: 100%;
   }
 
   .shop-item {
@@ -83,15 +87,34 @@
   }
 
   #header {
+    left: 47%;
     font-size: 0.85rem !important;
   }
 
   .header-container {
-    gap: 50px;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .cart {
+    padding: 0;
+  }
+
+  .header-container.blocco {
+    margin: 0 !important;
   }
 
   .header-anchors {
     display: none;
+  }
+  .cart-row {
+    gap: 50px;
+  }
+
+  .cart-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .mobile-menu {
