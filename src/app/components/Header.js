@@ -5,6 +5,13 @@ import { NeutralFace } from "./fonts";
 import SlideButton from "react-slide-button";
 
 export default function Header() {
+  useEffect(() => {
+    // This will only run on the client side
+    if (typeof document !== "undefined") {
+      // Your code that uses the document object
+    }
+  }, []); // empty dependency array ensures this runs only on mount
+
   const [isOpen, setIsOpen] = useState({
     mobileMenu: false,
     cart: false,
