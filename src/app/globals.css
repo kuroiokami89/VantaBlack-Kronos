@@ -79,6 +79,14 @@ p {
   border: none;
   border-bottom: #161616 solid 2px;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 25px;
+}
 /** FINE STILI GLOBALI **/
 
 /** INZIO STILE HEADER **/
@@ -239,8 +247,9 @@ p {
 }
 
 .prd-container {
+  overflow: hidden;
   display: flex;
-  gap: 50px;
+  gap: 100px;
   justify-content: space-between;
 }
 
@@ -258,12 +267,14 @@ p {
   cursor: pointer;
 }
 
-.prd-specs p {
+.prd-specs p,
+.modal-specs-paragraph {
   margin: 30px 0;
 }
 
 .modal-specs-paragraph,
 .modal-warranty-paragraph {
+  word-wrap: break-word;
   transition: opacity 0.5s ease, visibility 0s 0.5s;
   opacity: 0;
   visibility: hidden;

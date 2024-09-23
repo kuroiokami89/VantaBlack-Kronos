@@ -19,3 +19,7 @@ a,
   color: white;
   background: transparent;
 }
+
+.modal-specs-paragraph {
+  font-size: 1.25rem;
+}

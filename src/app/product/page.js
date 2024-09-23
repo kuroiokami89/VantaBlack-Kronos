@@ -21,7 +21,7 @@ export default function Product() {
   return (
     <div className={`prd-page ${NeutralFace.className}`}>
       <VideoComponent
-        video={"/Intro.mp4"}
+        video={"/Omega-Watch.mp4"}
         height={"85vh"}
         title={""}
         subTitle={""}
@@ -29,8 +29,8 @@ export default function Product() {
       <div className="prd-page blocco">
         <div className="shop-buttons">
           <div className="prd-title">
-            <h1>ROLEX SUBMARINER HULK</h1>
-            <span>116610LV</span>
+            <h1>Seamaster Aqua Terra 150M</h1>
+            <span>38 mm, steel</span>
           </div>
           <a
             className="btn buy-btn"
@@ -42,26 +42,50 @@ export default function Product() {
         </div>
         <div className="prd-container">
           <p className="prd-description">
-            Nel 2003, Rolex ha introdotto il 16110LV per commemorare il 50º
-            anniversario del Submariner. Nel 2010, questo è stato aggiornato al
-            116610LV, noto anche come "Hulk". Con una cassa più spessa, un
-            vivace quadrante verde e una lunetta in Cerachrom, l'orologio è
-            diventato uno dei Submariner più iconici e ricercati.
+            The Seamaster Aqua Terra is an exceptional tribute to OMEGA's rich
+            maritime heritage. In this 38 mm model, the symmetrical case is
+            crafted from stainless steel, and the caseback features a wave-edged
+            design. <br />
+            <br />
+            The blue sun-brushed dial is distinguished by a horizontal teak
+            pattern, inspired by the wooden decks of luxury boats. It also
+            features a date window at 6 o'clock and rhodium-plated hands and
+            indexes filled with white Super-LumiNova. <br />
+            <br />
+            Accompanied by a polished and brushed bracelet, this certified
+            chronometer is powered by the OMEGA Master Chronometer caliber 8800,
+            tested by the Swiss Federal Institute of Metrology (METAS) according
+            to the highest standards in the watchmaking industry.
           </p>
           <div className="prd-specs">
             <div
               className="prd-specs-modal"
               onClick={() => toggleElement("specsModal")}
             >
-              SPECIFICATION
+              WATCH SPECS
             </div>
-            <p
+            <ul
               className={`modal-specs-paragraph ${
                 isOpen.specsModal ? "open" : "closed"
               }`}
             >
-              AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-            </p>
+              <li>Reference: 220.10.38.20.03.001</li>
+              <li>Lug-to-lug distance: 19 mm</li>
+              <li>Lug width: 45.0 mm</li>
+              <li>Thickness: 12.2 mm</li>
+              <li>Diameter: 38 mm</li>
+              <li>Case: Stainless steel</li>
+              <li>Dial color: Blue</li>
+              <li>
+                Crystal: Domed scratch-resistant sapphire crystal with
+                anti-reflective treatment on both sides
+              </li>
+              <li>Water resistance: 15 bar (150 meters / 500 feet)</li>
+              <li>Total product weight (approx.): 131 g</li>
+              <li>Caliber: Omega 8800</li>
+              <li>Movement type: Automatic winding</li>
+              <li>Power reserve: 55 hours</li>
+            </ul>
             <div
               className="prd-warranty-modal"
               onClick={() => toggleElement("warrantyModal")}

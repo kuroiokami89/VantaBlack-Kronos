@@ -55,13 +55,13 @@ export default function Header() {
         className={`cart-menu menu-dropdown ${isOpen.cart ? "open" : "closed"}`}
       >
         <div className="cart-row">
-          <img className="cart-img" src="/Rolex.png" />
+          <img className="cart-img" src="/OOZOO.png" />
           <div className="cart-text">
             <div>
-              <span>ROLEX</span>
-              <span>Sky Dweller</span>
+              <span>OOZOO</span>
+              <span>steel black</span>
             </div>
-            <span>10.000 $</span>
+            <span>100 $</span>
           </div>
         </div>
         <div className="cart-row">
@@ -77,7 +77,7 @@ export default function Header() {
         <div className="cart-checkout">
           <h3>SUBTOTAL</h3>
           <div>
-            <h3>20.000 $</h3>
+            <h3>10.100 £</h3>
           </div>
         </div>
         <SlideButton

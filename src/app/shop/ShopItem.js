@@ -10,7 +10,7 @@ const StyledShopItem = styled.div`
   .shop-item {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Space between the image and text */
+    justify-content: space-between;
     background: #28282b;
     height: 650px;
     width: 630px;
@@ -29,12 +29,12 @@ const StyledShopItem = styled.div`
     font-size: 1.05rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Aligns the text to the bottom */
-    align-items: flex-start; /* Aligns text to the left */
+    justify-content: flex-end;
+    align-items: flex-start;
     gap: 7px;
-    padding-bottom: 10px; /* Optional padding at the bottom */
+    padding-bottom: 10px;
     margin-top: 25px;
-    color: white; /* Make text color stand out */
+    color: white;
   }
 
   @media screen and (max-width: 768px) {
