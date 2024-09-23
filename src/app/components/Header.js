@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react"; // Added useEffect import
+import { useState, useEffect } from "react";
 import { NeutralFace } from "./fonts";
 import SlideButton from "react-slide-button";
 

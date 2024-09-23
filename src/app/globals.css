@@ -199,58 +199,6 @@ p {
 }
 /** FINE STILE FOOTER **/
 
-/* INIZIO STILE SHOP-ITEM */
-.shop-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Space between the image and text */
-  background: #28282b;
-  height: 650px;
-  width: 630px;
-  padding: 25px;
-  position: relative;
-}
-
-.shop-item-img {
-  width: 400px;
-  height: auto;
-  margin: auto; /* Centers the image horizontally */
-  display: block;
-}
-
-.shop-item-text {
-  font-size: 1.05rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end; /* Aligns the text to the bottom */
-  align-items: flex-start; /* Aligns text to the left */
-  gap: 7px;
-  padding-bottom: 10px; /* Optional padding at the bottom */
-  margin-top: 25px;
-  color: white; /* Make text color stand out */
-}
-/* FINE STILE SHOP-ITEM */
-
-/* INIZIO STILE SHOP */
-#shop {
-  margin-top: 170px;
-  margin-bottom: 150px;
-}
-
-#shop h1 {
-  text-align: center;
-  font-size: 3rem;
-}
-
-#shop .container {
-  margin-top: 50px;
-  display: flex;
-  row-gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-/* FINE STILE SHOP */
-
 /* INIZIO STILE PRODUCT PAGE */
 
 .shop-buttons {
@@ -289,25 +237,49 @@ p {
   justify-content: center;
   gap: 60px;
 }
-/* FINE STILE PRODUCT PAGE */
 
-/* INIZIO ROW PRODUCTS STYLE */
-#row-products-container {
-  padding: 100px 50px;
+.prd-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 50px;
+  justify-content: space-between;
 }
 
-#row-item .shop-item-img {
-  width: 240px;
+.prd-description,
+.prd-specs {
+  flex: 0 0 50%;
 }
 
-#row-item .shop-item-text {
-  justify-content: unset;
-  align-items: unset;
-  text-align: center;
-  margin-top: 45px;
+.prd-specs-modal,
+.prd-warranty-modal {
+  font-size: 1.3rem;
+  padding: 30px 0;
+  border-top: #28282b 1px solid;
+  border-bottom: #28282b 1px solid;
+  cursor: pointer;
 }
 
-/* FINE ROW PRODUCTS STYLE */
+.prd-specs p {
+  margin: 30px 0;
+}
+
+.modal-specs-paragraph,
+.modal-warranty-paragraph {
+  transition: opacity 0.5s ease, visibility 0s 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-specs-paragraph.open,
+.modal-warranty-paragraph.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+.modal-specs-paragraph.closed,
+.modal-warranty-paragraph.closed {
+  display: none;
+  opacity: 0;
+}
+
+/* FINE STILE PRODUCT PAGE */

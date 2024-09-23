@@ -13,13 +13,17 @@ const StyledTextBlock = styled.div`
     flex-direction: column;
     gap: 25px;
   }
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 20px;
+  }
 `;
 
 export default function TextBlock({ title, text, backgroundColor }) {
   return (
     <StyledTextBlock
       className={`${NeutralFace.className}`}
-      $backgroundColor={backgroundColor} // Use $ here as well
+      $backgroundColor={backgroundColor}
       fontFamily={NeutralFace.className}
     >
       <div className="text-block-container">

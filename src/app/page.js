@@ -1,6 +1,6 @@
 "use client";
 
-import Intro from "./components/Intro";
+import VideoComponent from "./components/VideoComponent";
 import RowProducts from "./components/RowProducts";
 import PromoProduct from "./components/PromoProduct";
 import TextBlock from "./components/TextBlock";
@@ -8,7 +8,7 @@ import TextBlock from "./components/TextBlock";
 export default function Home() {
   return (
     <>
-      <Intro
+      <VideoComponent
         video={"/Intro.mp4"}
         height={"100vh"}
         title={"Discover Timeless Elegance with Kronos"}
