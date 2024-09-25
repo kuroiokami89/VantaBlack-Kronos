@@ -1,7 +1,7 @@
 "use client";
 
 import styled from "styled-components";
-import { NeutralFace } from "./fonts";
+import { NeutralFace, CreatoDisplayLight } from "./fonts";
 
 const StyledPromoProduct = styled.div`
   display: flex;
@@ -34,8 +34,8 @@ export default function PromoProduct({ img, title, text, button }) {
   return (
     <StyledPromoProduct id="promo-product">
       <img src={img} alt={title} />
-      <div className={`promo-product-text ${NeutralFace.className}`}>
-        <h2>{title}</h2>
+      <div className={`promo-product-text ${CreatoDisplayLight.className}`}>
+        <h2 className={`${NeutralFace.className}`}>{title}</h2>
         <p>{text}</p>
         <a href="#" className="link-btn">
           {button}

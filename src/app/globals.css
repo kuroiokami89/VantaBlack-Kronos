@@ -13,7 +13,6 @@
 
 /* Body styles */
 body {
-  font-size: 14px;
   color: #faf9f6;
   background: #080808;
   width: 100%;
@@ -41,7 +40,6 @@ a {
 }
 
 .link-btn {
-  font-size: 1.15rem;
   font-weight: 100;
   text-decoration: unset !important;
   position: relative;
@@ -54,30 +52,26 @@ a {
   color: rgba(255, 255, 255, 0.45);
 }
 
-p {
-  font-weight: 100;
-  font-size: 1.35rem;
-  line-height: 1.6;
-}
-
 .input-class {
   background: #28282b;
-  color: white;
+  color: #faf9f6;
   height: 50px;
   border: none;
-  font-size: 1.7rem;
   padding: 20px 50px;
   height: 100px;
 }
 
 .input-class input {
-  font-size: 1.1rem;
   padding: 20px 0px;
   background: #28282b;
-  color: white;
+  color: #faf9f6;
   width: 100%;
   border: none;
   border-bottom: #161616 solid 2px;
+}
+
+.slide-but {
+  color: #faf9f6;
 }
 
 ul {
@@ -98,7 +92,6 @@ li {
   transform: translateX(-50%);
   width: fit-content;
   z-index: 99;
-  /* background-color: rgba(0, 0, 0, 0.75); */
   background: #161616;
   padding: 15px 30px;
   display: flex;
@@ -130,14 +123,12 @@ li {
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-/* When the cart is open, slide down and fade in */
 .menu-dropdown.open {
   margin-top: 50px;
-  max-height: 2000px; /* Adjust to the height of your cart content */
+  max-height: 2000px;
   opacity: 1;
 }
 
-/* When the cart is closed, slide up and fade out */
 .menu-dropdown.closed {
   max-height: 0;
   opacity: 0;
@@ -186,7 +177,6 @@ li {
 /** INIZIO STILE FOOTER **/
 #footer {
   padding: 50px;
-  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -201,7 +191,8 @@ li {
   margin-bottom: 20px !important;
 }
 
-.social-links {
+.social-links,
+.footer-link {
   display: flex;
   gap: 50px;
 }
@@ -216,7 +207,6 @@ li {
 }
 
 .buy-btn {
-  font-size: 1.2rem;
   background: #faf9f6;
   color: #28282b;
   padding: 15px 25px;
@@ -236,14 +226,22 @@ li {
 .prd-title {
   margin-top: 10px;
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .prd-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
+}
+
+.prd-page-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
 }
 
 .prd-container {
@@ -260,7 +258,6 @@ li {
 
 .prd-specs-modal,
 .prd-warranty-modal {
-  font-size: 1.3rem;
   padding: 30px 0;
   border-top: #28282b 1px solid;
   border-bottom: #28282b 1px solid;

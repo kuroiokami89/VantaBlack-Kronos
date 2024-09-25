@@ -1,7 +1,11 @@
 "use client";
 
 import styled from "styled-components";
-import { NeutralFace, NeutralFaceBold } from "../components/fonts";
+import {
+  NeutralFace,
+  NeutralFaceBold,
+  CreatoDisplayLight,
+} from "../components/fonts";
 
 const StyledTextBlock = styled.div`
   padding: 100px 50px;
@@ -22,9 +26,9 @@ const StyledTextBlock = styled.div`
 export default function TextBlock({ title, text, backgroundColor }) {
   return (
     <StyledTextBlock
-      className={`${NeutralFace.className}`}
+      className={`${CreatoDisplayLight.className}`}
       $backgroundColor={backgroundColor}
-      fontFamily={NeutralFace.className}
+      fontFamily={CreatoDisplayLight.className}
     >
       <div className="text-block-container">
         <h2 className={`${NeutralFaceBold.className}`}>{title}</h2>

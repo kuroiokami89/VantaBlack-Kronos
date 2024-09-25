@@ -10,7 +10,7 @@ const StyledVideoComponent = styled.div`
   justify-content: center;
   align-items: center;
   height: ${(props) => props.height};
-  overflow: hidden; /* Ensures video fits */
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
 
   #intro-video {
@@ -19,8 +19,8 @@ const StyledVideoComponent = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the background */
-    z-index: -1; /* Ensures the video stays behind the content */ /* Adjust this value to set desired opacity */
+    object-fit: cover;
+    z-index: -1;
   }
 
   .content {

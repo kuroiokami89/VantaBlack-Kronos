@@ -4,7 +4,6 @@ import "./globals.css";
 import "./mediaquery.css";
 import "./fonts.css";
 import HeadComponent from "./components/HeadComponent";
-// import Header from "./components/Header";
 import Footer from "./components/Footer";
 import dynamic from "next/dynamic";
 

@@ -9,7 +9,17 @@ export default function Footer() {
         <input type="text" placeholder="NEWSLETTER SIGNUP" name="name" />
       </div>
       <footer id="footer" className={`${NeutralFace.className}`}>
-        <span>KRONOS</span>
+        <div className="footer-link">
+          <a className="link link-btn" href="/shop">
+            SHOP
+          </a>
+          <a className="link link-btn" href="/about">
+            ABOUT
+          </a>
+          <a className="link link-btn" href="#footer">
+            CONTACT
+          </a>
+        </div>
         <div className="social-links">
           <a
             className="link-btn"

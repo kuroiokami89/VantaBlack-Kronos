@@ -1,7 +1,11 @@
 "use client";
 
 import ShopItem from "./ShopItem";
-import { NeutralFace, NeutralFaceBold } from "../components/fonts";
+import {
+  NeutralFace,
+  NeutralFaceBold,
+  CreatoDisplayLight,
+} from "../components/fonts";
 import styled from "styled-components";
 
 const StyledShop = styled.div`
@@ -16,7 +20,7 @@ const StyledShop = styled.div`
   .container {
     margin-top: 50px;
     display: flex;
-    row-gap: 10px;
+    row-gap: 5px;
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -28,24 +32,24 @@ export default function Shop() {
       <h1>SHOP</h1>
       <div className="container">
         <ShopItem
-          link="/product"
+          link="/products/omega-seamaster"
           imgClass="/omega-seamaster-aqua-terra.png"
           brand="Omega"
           model="Sea Master Acqua terra"
           price="7.000 £"
         />
         <ShopItem
-          link="/product"
+          link="/products/oozoo-black"
           imgClass="/OOZOO.png"
-          brand="Oozoo"
+          brand="Black Steel"
           model="C11412"
           price="100 £"
         />
         <ShopItem
-          link="/product"
+          link="/products/rolex-submariner"
           imgClass="/Rolex.png"
           brand="Rolex"
-          model="Vantablack Model"
+          model="Submariner"
           price="100 £"
         />
         <ShopItem

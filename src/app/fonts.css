@@ -1,5 +1,12 @@
+/* Import font only once */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+/* Base font styling */
+body {
+  font-size: 14px;
+}
+
+/* Headings */
 h1 {
   font-size: 3.5rem;
   line-height: 1;
@@ -14,12 +21,38 @@ h3 {
   font-size: 2rem;
 }
 
-a,
-.link-btn {
-  color: white;
-  background: transparent;
+/* Paragraph and link button styling */
+p,
+.modal-specs-paragraph {
+  font-weight: 100;
+  font-size: 1.35rem;
+  line-height: 1.6;
 }
 
-.modal-specs-paragraph {
-  font-size: 1.25rem;
+.link-btn,
+a {
+  color: white;
+  background: transparent;
+  font-size: 1.15rem;
+}
+
+/* Specific button styles */
+.buy-btn {
+  font-size: 1rem;
+}
+
+/* Input class styling */
+.input-class {
+  font-size: 1.7rem;
+}
+
+.input-class input {
+  font-size: 1.1rem;
+}
+
+/* Footer and modal styles */
+#footer,
+.prd-specs-modal,
+.prd-warranty-modal {
+  font-size: 1.3rem;
 }
