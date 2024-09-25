@@ -1,6 +1,7 @@
 "use client";
 
 import styled from "styled-components";
+import { useState, useRef } from "react";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
 
 const StyledVideoComponent = styled.div`
@@ -35,16 +36,45 @@ const StyledVideoComponent = styled.div`
     margin-top: 25px;
     font-size: 1.3rem;
   }
+
+  .mute-button {
+    padding: 10px 20px;
+    background: #080808;
+    color: #faf9f6;
+    border: solid 1px #faf9f6;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 2;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+  }
 `;
 
-export default function Intro({ height, video, title, subTitle }) {
+export default function Intro({
+  height,
+  video,
+  title,
+  subTitle,
+  showMuteButton = true,
+}) {
+  const [isMuted, setIsMuted] = useState(true);
+  const videoRef = useRef(null);
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
   return (
     <StyledVideoComponent
       id="intro"
       height={height}
       className={`${NeutralFaceBold.className}`}
     >
-      <video id="intro-video" autoPlay muted loop>
+      <video id="intro-video" autoPlay muted={isMuted} loop ref={videoRef}>
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
@@ -53,6 +83,14 @@ export default function Intro({ height, video, title, subTitle }) {
         <span className={`content-span ${NeutralFace.className}`}>
           {subTitle}
         </span>
+        {showMuteButton && (
+          <button
+            className={`mute-button ${NeutralFace.className}`}
+            onClick={toggleMute}
+          >
+            {isMuted ? "Unmute" : "Mute"}
+          </button>
+        )}
       </div>
     </StyledVideoComponent>
   );

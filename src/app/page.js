@@ -4,6 +4,7 @@ import VideoComponent from "./components/VideoComponent";
 import RowProducts from "./components/RowProducts";
 import PromoProduct from "./components/PromoProduct";
 import TextBlock from "./components/TextBlock";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         height={"100vh"}
         title={"Discover Timeless Elegance with Kronos"}
         subTitle={"SHOP BASED IN EUROPE - ITALY"}
+        showMuteButton={false}
       />
       <PromoProduct
         img="/Rolex-Sky-Dweller.jpg"
