@@ -20,9 +20,16 @@ const StyledShop = styled.div`
   .container {
     margin-top: 50px;
     display: flex;
-    row-gap: 5px;
+    row-gap: 10px;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .container {
+      justify-content: center;
+      column-gap: 5px;
+    }
   }
 `;
 

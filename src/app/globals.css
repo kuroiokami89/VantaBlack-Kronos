@@ -4,9 +4,9 @@
   margin: 0;
   padding: 0;
   outline: none;
-  box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /** INIZIO STILI GLOBALI **/
@@ -101,7 +101,7 @@ li {
 .header-container {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
   margin-bottom: 0 !important;
 }
 
@@ -242,6 +242,7 @@ li {
   flex-direction: column;
   justify-content: center;
   gap: 70px;
+  margin: 0 50px;
 }
 
 .prd-container {

@@ -33,8 +33,8 @@ export default function Product() {
       <div className="prd-page-block blocco">
         <div className="shop-buttons">
           <div className="prd-title">
+            <span>OOZOO</span>
             <h1>Oozoo Black Steel</h1>
-            <span>38 mm, steel</span>
           </div>
           <a
             className="btn buy-btn"
@@ -59,7 +59,7 @@ export default function Product() {
               className="prd-specs-modal"
               onClick={() => toggleElement("specsModal")}
             >
-              WATCH SPECS
+              WATCH SPECS {isOpen.specsModal ? "-" : "+"}
             </div>
             <ul
               className={`modal-specs-paragraph ${
@@ -87,7 +87,7 @@ export default function Product() {
               className="prd-warranty-modal"
               onClick={() => toggleElement("warrantyModal")}
             >
-              WARRANTY
+              WARRANTY {isOpen.warrantyModal ? "-" : "+"}
             </div>
             <p
               className={`modal-warranty-paragraph ${

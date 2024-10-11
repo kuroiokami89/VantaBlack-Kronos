@@ -7,6 +7,7 @@ import {
   CreatoDisplayLight,
 } from "../../components/fonts";
 import VideoComponent from "../../components/VideoComponent";
+import RowPicsComponent from "@/app/components/RowPicsComponent";
 
 export default function Product() {
   const [isOpen, setIsOpen] = useState({
@@ -30,11 +31,11 @@ export default function Product() {
         title={""}
         subTitle={""}
       />
-      <div className="prd-page-block blocco">
+      <div className="prd-page-block">
         <div className="shop-buttons">
           <div className="prd-title">
+            <span>OMEGA</span>
             <h1>Seamaster Aqua Terra 150M</h1>
-            <span>38 mm, steel</span>
           </div>
           <a
             className="btn buy-btn"
@@ -59,7 +60,7 @@ export default function Product() {
               className="prd-specs-modal"
               onClick={() => toggleElement("specsModal")}
             >
-              WATCH SPECS
+              WATCH SPECS {isOpen.specsModal ? "-" : "+"}
             </div>
             <ul
               className={`modal-specs-paragraph ${
@@ -87,7 +88,7 @@ export default function Product() {
               className="prd-warranty-modal"
               onClick={() => toggleElement("warrantyModal")}
             >
-              WARRANTY
+              WARRANTY {isOpen.warrantyModal ? "-" : "+"}
             </div>
             <p
               className={`modal-warranty-paragraph ${
@@ -102,6 +103,11 @@ export default function Product() {
           </div>
         </div>
       </div>
+      <RowPicsComponent
+        pic1={"/omega-seamaster-aqua-terra-1.jpg"}
+        pic2={"/omega-seamaster-aqua-terra-2.jpg"}
+        pic3={"/omega-seamaster-aqua-terra-3.jpg"}
+      />
     </div>
   );
 }

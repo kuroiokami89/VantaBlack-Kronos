@@ -4,7 +4,6 @@ import VideoComponent from "./components/VideoComponent";
 import RowProducts from "./components/RowProducts";
 import PromoProduct from "./components/PromoProduct";
 import TextBlock from "./components/TextBlock";
-import { faL } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (

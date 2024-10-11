@@ -3,6 +3,8 @@
 import styled from "styled-components";
 import { useState, useRef } from "react";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVolumeXmark, faVolumeHigh } from "@fortawesome/free-solid-svg-icons";
 
 const StyledVideoComponent = styled.div`
   position: relative;
@@ -38,12 +40,12 @@ const StyledVideoComponent = styled.div`
   }
 
   .mute-button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     background: #080808;
     color: #faf9f6;
     border: solid 1px #faf9f6;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     z-index: 2;
     position: absolute;
     bottom: 30px;
@@ -88,7 +90,10 @@ export default function Intro({
             className={`mute-button ${NeutralFace.className}`}
             onClick={toggleMute}
           >
-            {isMuted ? "Unmute" : "Mute"}
+            <FontAwesomeIcon
+              className="mute-unmute-icons"
+              icon={isMuted ? faVolumeXmark : faVolumeHigh}
+            />
           </button>
         )}
       </div>
