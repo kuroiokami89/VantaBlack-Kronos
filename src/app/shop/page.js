@@ -13,7 +13,6 @@ const StyledShop = styled.div`
   margin-bottom: 150px;
 
   h1 {
-    text-align: center;
     font-size: 3rem;
   }
 

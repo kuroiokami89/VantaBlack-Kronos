@@ -51,7 +51,7 @@
   }
 
   .blocco {
-    margin: 0 20px;
+    margin: 0 25px;
   }
 
   .content-span,
@@ -128,6 +128,33 @@
 
   .prd-container {
     flex-direction: column;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .contact-box {
+    flex: none;
+    border-right: 0;
+    padding-right: 0;
+  }
+
+  #contact p {
+    font-size: 1rem !important;
+  }
+
+  #contact h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-img {
+    flex: none;
+  }
+
+  .contact-img img {
+    width: 100%;
   }
 }
 

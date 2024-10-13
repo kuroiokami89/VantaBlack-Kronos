@@ -292,3 +292,61 @@ li {
 }
 
 /* FINE STILE PRODUCT PAGE */
+
+/* INIZIO STILE CONTACT */
+
+#contact {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact p {
+  font-size: 1.25rem;
+}
+
+#contact h1 {
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  border-top: 1px solid white;
+  display: flex;
+}
+
+.contact-box {
+  flex: 0 0 45%;
+  padding-right: 80px;
+  padding-top: 50px;
+  border-right: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contact-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.contact-section {
+  padding-top: 50px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Adds space between the content and the border */
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+/* FINE STILE CONTACT */

@@ -33,7 +33,7 @@ export default function Header() {
           <a className="link link-btn" href="/about">
             ABOUT
           </a>
-          <a className="link link-btn" href="#footer">
+          <a className="link link-btn" href="/contact">
             CONTACT
           </a>
         </div>
@@ -102,7 +102,7 @@ export default function Header() {
         <a className="link link-btn" href="/about">
           ABOUT
         </a>
-        <a className="link link-btn" href="#footer">
+        <a className="link link-btn" href="/contact">
           CONTACT
         </a>
       </div>

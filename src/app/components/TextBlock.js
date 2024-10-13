@@ -19,7 +19,7 @@ const StyledTextBlock = styled.div`
   }
 
   @media screen and (max-width: 768px) {
-    padding: 100px 20px;
+    padding: 100px 25px;
   }
 `;
 
