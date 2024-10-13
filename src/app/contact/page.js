@@ -37,7 +37,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-img">
-            <img src="italy.png" />
+            <img src="Italy.png" />
           </div>
         </div>
       </div>
