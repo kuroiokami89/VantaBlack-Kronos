@@ -3,7 +3,7 @@
 import VideoComponent from "./components/VideoComponent";
 import RowProducts from "./components/RowProducts";
 import PromoProduct from "./components/PromoProduct";
-import TextBlock from "./components/TextBlock";
+import BrandsRow from "./components/BrandsRow";
 
 export default function Home() {
   return (
@@ -15,6 +15,7 @@ export default function Home() {
         subTitle={"SHOP BASED IN EUROPE - ITALY"}
         showMuteButton={false}
       />
+      <BrandsRow />
       <PromoProduct
         img="/Rolex-Sky-Dweller.jpg"
         title="Rolex Sky Dweller"
@@ -23,12 +24,7 @@ export default function Home() {
         }
         button="BUY NOW"
       />
-      <TextBlock
-        title="ABOUT US"
-        text="La nostra missione è creare orologi che non siano solo strumenti per misurare il tempo, ma veri e propri capolavori che riflettono il vostro stile e la vostra personalità"
-        backgroundColor="#28282b"
-      />
-      <RowProducts />
+      {/* <RowProducts /> */}
     </>
   );
 }

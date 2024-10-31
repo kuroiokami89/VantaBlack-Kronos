@@ -9,8 +9,7 @@ import {
 import styled from "styled-components";
 
 const StyledShop = styled.div`
-  margin-top: 170px;
-  margin-bottom: 150px;
+  margin-top: 150px;
 
   h1 {
     font-size: 3rem;
@@ -19,15 +18,35 @@ const StyledShop = styled.div`
   .container {
     margin-top: 50px;
     display: flex;
-    row-gap: 10px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #fff;
   }
 
-  @media screen and (max-width: 1450px) {
-    .container {
-      justify-content: center;
-      column-gap: 5px;
+  .container > div {
+    width: calc(33.3333% - 1px);
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+
+  .container > div:nth-child(3n) {
+    border-right: none;
+  }
+
+  .container > div:nth-last-child(-n + 3) {
+    border-bottom: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    .container > div {
+      width: 100%;
+      border-right: none;
+    }
+
+    .container > div:nth-last-child(-n + 1) {
+      border-bottom: none;
     }
   }
 `;

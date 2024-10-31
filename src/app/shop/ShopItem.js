@@ -11,7 +11,6 @@ const StyledShopItem = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #28282b;
     height: 650px;
     width: 630px;
     padding: 25px;
@@ -21,7 +20,7 @@ const StyledShopItem = styled.div`
   .shop-item-img {
     width: 400px;
     height: auto;
-    margin: auto; /* Centers the image horizontally */
+    margin: auto;
     display: block;
   }
 

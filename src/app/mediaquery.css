@@ -13,16 +13,13 @@
     gap: 40px;
   }
 
-  .menu-dropdown {
+  .menu-dropdown,
+  #promo-product img {
     width: 100%;
   }
 
   #promo-product {
     flex-direction: column;
-  }
-
-  #promo-product img {
-    width: 100%;
   }
 }
 
