@@ -74,7 +74,7 @@ export default function Intro({
     <StyledVideoComponent
       id="intro"
       height={height}
-      className={`${NeutralFaceBold.className}`}
+      className={`borders ${NeutralFaceBold.className}`}
     >
       <video id="intro-video" autoPlay muted={isMuted} loop ref={videoRef}>
         <source src={video} type="video/mp4" />

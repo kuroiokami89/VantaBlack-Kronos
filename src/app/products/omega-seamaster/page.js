@@ -8,6 +8,7 @@ import {
 } from "../../components/fonts";
 import VideoComponent from "../../components/VideoComponent";
 import RowPicsComponent from "@/app/components/RowPicsComponent";
+import ContactForm from "@/app/components/ContactForm";
 
 export default function Product() {
   const [isOpen, setIsOpen] = useState({
@@ -108,6 +109,7 @@ export default function Product() {
         pic2={"/omega-seamaster-aqua-terra-2.jpg"}
         pic3={"/omega-seamaster-aqua-terra-3.jpg"}
       />
+      <ContactForm />
     </div>
   );
 }

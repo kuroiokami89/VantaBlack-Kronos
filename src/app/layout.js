@@ -5,10 +5,9 @@ import "./mediaquery.css";
 import "./fonts.css";
 import HeadComponent from "./components/HeadComponent";
 import Footer from "./components/Footer";
-import ContactForm from "./components/ContactForm";
 import dynamic from "next/dynamic";
 
-const Header = dynamic(() => import("./components/Header"), {
+const Header = dynamic(() => import("./components/Header2"), {
   ssr: false, // Prevent server-side rendering for the Header component
 });
 
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         {children}
-        <ContactForm />
         <Footer />
       </body>
     </html>

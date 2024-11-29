@@ -7,9 +7,10 @@ import {
   CreatoDisplayLight,
 } from "../components/fonts";
 import styled from "styled-components";
+import ContactForm from "../components/ContactForm";
 
 const StyledShop = styled.div`
-  margin-top: 150px;
+  padding-top: 150px;
 
   h1 {
     font-size: 3rem;
@@ -49,11 +50,17 @@ const StyledShop = styled.div`
       border-bottom: none;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      justify-content: space-around;
+    }
+  }
 `;
 
 export default function Shop() {
   return (
-    <StyledShop id="shop" className={`${NeutralFace.className}`}>
+    <StyledShop id="shop" className={`borders ${NeutralFace.className}`}>
       <h1>SHOP</h1>
       <div className="container">
         <ShopItem
@@ -99,6 +106,7 @@ export default function Shop() {
           price="10.000 £"
         />
       </div>
+      <ContactForm />
     </StyledShop>
   );
 }

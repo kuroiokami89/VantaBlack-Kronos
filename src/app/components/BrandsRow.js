@@ -62,7 +62,10 @@ export default function BrandsRow() {
   };
 
   return (
-    <StyledBrandsRow id="brands-row" className={`${NeutralFace.className}`}>
+    <StyledBrandsRow
+      id="brands-row"
+      className={`borders ${NeutralFace.className}`}
+    >
       <h2 className={`${NeutralFace.className}`}>OUR BUSINESS PARTNERS</h2>
       <Slider {...settings}>
         <div>

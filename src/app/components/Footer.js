@@ -11,7 +11,7 @@ import { NeutralFace } from "./fonts";
 export default function Footer() {
   return (
     <>
-      <footer id="footer" className={`${NeutralFace.className}`}>
+      <footer id="footer" className={`borders ${NeutralFace.className}`}>
         <span>KRONOS</span>
         <div className="footer-link">
           <a className="link link-btn">©2024 KRONOS - ALL RIGHTS RESERVED</a>

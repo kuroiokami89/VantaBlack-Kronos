@@ -51,12 +51,34 @@
     margin: 0 25px;
   }
 
+  .prd-page-block {
+    margin: 0 25px;
+  }
+
+  .prd-page-block h1 {
+    font-size: 3rem;
+  }
+
+  .prd-title span {
+    font-size: 0.9rem;
+  }
+
+  .prd-description {
+    border-right: 0;
+    /* border-bottom: 1px solid white; */
+  }
+
+  .prd-specs {
+    width: 100%;
+  }
+
   .content-span,
   span {
     font-size: 1.1rem;
   }
 
   #header {
+    left: 6%;
     font-size: 0.85rem !important;
   }
 
@@ -100,9 +122,18 @@
     gap: 50px;
   }
 
-  .social-links {
+  .footer-link {
+    flex-direction: column;
+  }
+
+  .social-links,
+  .site-links {
     flex-direction: column;
     gap: 40px;
+  }
+
+  #contact-form h2 {
+    width: 100%;
   }
 
   #footer span {
@@ -125,6 +156,7 @@
 
   .prd-container {
     flex-direction: column;
+    border-top: 0;
   }
 
   .contact-container {

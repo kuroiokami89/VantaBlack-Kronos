@@ -4,7 +4,7 @@ import { NeutralFace, NeutralFaceBold } from "./fonts";
 
 export default function ContactForm() {
   return (
-    <div id="contact-form" className={`${NeutralFace.className}`}>
+    <div id="contact-form" className={`borders ${NeutralFace.className}`}>
       <h2 className={`${NeutralFace.className}`}>
         SUBSCRIBE TO BE THE FIRST TO HEAR ABOUT KRONOS NEW DROPS
       </h2>

@@ -41,7 +41,7 @@ const StyledPromoProduct = styled.div`
 }
 export default function PromoProduct({ img, title, text, button }) {
   return (
-    <StyledPromoProduct id="promo-product">
+    <StyledPromoProduct id="promo-product" className="borders">
       <img src={img} alt={title} />
       <div className={`promo-product-text ${CreatoDisplayLight.className}`}>
         <h2 className={`${NeutralFace.className}`}>{title}</h2>

@@ -4,6 +4,7 @@ import VideoComponent from "./components/VideoComponent";
 import RowProducts from "./components/RowProducts";
 import PromoProduct from "./components/PromoProduct";
 import BrandsRow from "./components/BrandsRow";
+import ContactForm from "./components/ContactForm";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         button="BUY NOW"
       />
       {/* <RowProducts /> */}
+      <ContactForm />
     </>
   );
 }

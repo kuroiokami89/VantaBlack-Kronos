@@ -7,6 +7,7 @@ import {
   CreatoDisplayLight,
 } from "../../components/fonts";
 import VideoComponent from "../../components/VideoComponent";
+import ContactForm from "@/app/components/ContactForm";
 
 export default function Product() {
   const [isOpen, setIsOpen] = useState({
@@ -102,6 +103,7 @@ export default function Product() {
           </div>
         </div>
       </div>
+      <ContactForm />
     </div>
   );
 }

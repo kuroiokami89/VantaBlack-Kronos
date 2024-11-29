@@ -17,6 +17,8 @@ body {
   background: #080808;
   width: 100%;
   min-height: 100vh; /* Ensure body covers the full viewport height */
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
 
 ::selection {
@@ -54,6 +56,11 @@ body {
   margin-bottom: 200px !important;
 }
 
+/* .borders {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+} */
+
 a {
   text-decoration: none;
 }
@@ -87,19 +94,17 @@ li {
 
 /** INZIO STILE HEADER **/
 #header {
-  overflow-x: hidden;
   position: fixed;
-  top: 30px;
+  top: 30px; /* Distance from the top */
   left: 50%;
-  transform: translateX(-50%);
-  width: fit-content;
+  transform: translateX(-50%); /* Center horizontally */
   z-index: 99;
   background: rgba(0, 0, 0, 1);
-  /* background: #161616; */
   padding: 15px 30px;
   display: flex;
   flex-direction: column;
   border: 1px solid white;
+  box-sizing: border-box; /* Ensures padding doesn't affect centering */
 }
 
 .header-container {
@@ -180,8 +185,7 @@ li {
 
 /** INIZIO STILE FOOTER **/
 #footer {
-  margin: 0 50px;
-  padding: 20px 0;
+  padding: 20px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -386,7 +390,7 @@ li {
 /* CONTACT FORM */
 
 #contact-form {
-  padding: 100px 0;
+  padding: 100px 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -412,3 +416,5 @@ li {
   text-align: center;
   line-height: 1.7;
 }
+
+/* CHECKOUT STYLE */

@@ -17,6 +17,11 @@ const StyledRowPicsComponent = styled.div`
       transform: scale(1.1);
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    margin: 100px 0;
+  }
 `;
 
 export default function RowPicsComponent({ pic1, pic2, pic3 }) {
