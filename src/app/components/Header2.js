@@ -6,14 +6,16 @@ import styled from "styled-components";
 import SlideButton from "react-slide-button";
 
 const StyledHeader = styled.div`
+  mix-blend-mode: difference;
+  margin-top: 20px;
   position: fixed;
   width: 100%;
   z-index: 99;
-  background: rgba(0, 0, 0, 1);
+  // background: rgba(0, 0, 0, 1);
   padding: 15px 30px;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border-top: 1px solid white;
   box-sizing: border-box; /* Ensures padding doesn't affect centering */
 
   @media screen and (max-width: 768px) {
@@ -46,21 +48,18 @@ export default function Header() {
           KRONOS
         </a>
         <div className="header-anchors">
-          <a className="link link-btn" href="/shop">
+          <a className="link" href="/shop">
             SHOP
           </a>
-          <a className="link link-btn" href="/about">
+          <a className="link" href="/about">
             ABOUT
           </a>
-          <a className="link link-btn" href="/contact">
+          <a className="link" href="/contact">
             CONTACT
           </a>
         </div>
         <div className="mobile-menu">
-          <a
-            className="link link-btn"
-            onClick={() => toggleElement("mobileMenu")}
-          >
+          <a className="link" onClick={() => toggleElement("mobileMenu")}>
             MENU
           </a>
         </div>

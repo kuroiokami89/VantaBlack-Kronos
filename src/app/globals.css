@@ -17,8 +17,8 @@ body {
   background: #080808;
   width: 100%;
   min-height: 100vh; /* Ensure body covers the full viewport height */
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  /* border-left: 1px solid white;
+  border-right: 1px solid white; */
 }
 
 ::selection {
@@ -109,7 +109,7 @@ li {
 
 .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 80px;
   margin-bottom: 0 !important;
 }
