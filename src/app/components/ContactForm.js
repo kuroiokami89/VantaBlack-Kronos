@@ -14,7 +14,7 @@ export default function ContactForm() {
         placeholder="[EMAIL.ADRESS@GMAIL.COM]"
         required
       />
-      <a>SEND EMAIL</a>
+      <a className="link link-btn">SEND EMAIL</a>
     </div>
   );
 }

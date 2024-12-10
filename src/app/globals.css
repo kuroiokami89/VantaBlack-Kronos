@@ -75,8 +75,8 @@ a {
 }
 
 .link-btn:hover {
-  /* color: rgba(255, 255, 255, 0.45); */
-  color: #50c878;
+  color: rgba(255, 255, 255, 0.45);
+  /* color: #50c878; */
 }
 
 .slide-but {

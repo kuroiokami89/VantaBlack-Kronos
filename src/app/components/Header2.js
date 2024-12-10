@@ -48,18 +48,21 @@ export default function Header() {
           KRONOS
         </a>
         <div className="header-anchors">
-          <a className="link" href="/shop">
+          <a className="link link-btn" href="/shop">
             SHOP
           </a>
-          <a className="link" href="/about">
+          <a className="link link-btn" href="/about">
             ABOUT
           </a>
-          <a className="link" href="/contact">
+          <a className="link link-btn" href="/contact">
             CONTACT
           </a>
         </div>
         <div className="mobile-menu">
-          <a className="link" onClick={() => toggleElement("mobileMenu")}>
+          <a
+            className="link link-btn"
+            onClick={() => toggleElement("mobileMenu")}
+          >
             MENU
           </a>
         </div>
