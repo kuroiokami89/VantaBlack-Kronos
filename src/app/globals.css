@@ -230,15 +230,19 @@ li {
 }
 
 .buy-btn {
-  background: #faf9f6;
-  color: #28282b;
+  border: 1px solid #faf9f6;
+  background: #000;
+  color: #faf9f6;
   padding: 15px 25px;
-  transition: background 0.45s ease-in, color 0.45s ease-in;
+  width: fit-content;
+  transition: background 0.45s ease-in, color 0.45s ease-in,
+    border 0.45s ease-in;
 }
 
 .buy-btn:hover {
-  background: #28282b;
-  color: #faf9f6;
+  background: #faf9f6;
+  color: #000;
+  border: 1px solid #000;
 }
 
 .line {
@@ -332,7 +336,8 @@ li {
 /* INIZIO STILE CONTACT */
 
 #contact {
-  margin-top: 150px;
+  padding: 0 30px;
+  padding-top: 150px;
   display: flex;
   flex-direction: column;
 }
@@ -418,3 +423,9 @@ li {
 }
 
 /* CHECKOUT STYLE */
+
+.mute-button {
+  background: transparent !important;
+  border: 0 !important;
+  font-size: 2.5rem !important;
+}

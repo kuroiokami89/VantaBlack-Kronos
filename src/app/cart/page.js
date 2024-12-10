@@ -6,9 +6,10 @@ import { NeutralFace } from "../components/fonts"; // Use correct font import
 const StyledCheckout = styled.div`
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 150px;
   align-items: flex-start;
   gap: 50px;
+  margin: 0 30px;
 
   h1 {
     font-size: 2rem;
@@ -16,6 +17,7 @@ const StyledCheckout = styled.div`
   }
 
   .cart-container {
+    border-top: 1px solid white;
     width: 100%;
   }
 

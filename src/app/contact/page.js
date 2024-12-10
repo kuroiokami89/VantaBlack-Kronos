@@ -5,11 +5,12 @@ import {
   NeutralFaceBold,
   CreatoDisplayLight,
 } from "../components/fonts";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
     <>
-      <div className={`blocco ${NeutralFace.className}`} id="contact">
+      <div className={` ${NeutralFace.className}`} id="contact">
         <h1>OUR STORES</h1>
         <div className="contact-container">
           <div className="contact-box">
@@ -41,6 +42,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <ContactForm />
     </>
   );
 }

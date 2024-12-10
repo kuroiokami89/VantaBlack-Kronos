@@ -13,6 +13,7 @@ const StyledShop = styled.div`
   padding-top: 150px;
 
   h1 {
+    padding-left: 30px;
     font-size: 3rem;
   }
 
