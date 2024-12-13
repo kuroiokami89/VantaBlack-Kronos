@@ -52,9 +52,33 @@ const StyledShop = styled.div`
     }
   }
 
+  @media screen and (max-width: 1450px) {
+    .container > div {
+      width: calc(50% - 1px); /* Adjust the width for smaller screens */
+      box-sizing: border-box;
+    }
+
+    .container > div:nth-child(3n) {
+      border-right: 1px solid white;
+    }
+
+    .container > div:nth-last-child(-n + 3) {
+      border-bottom: 1px solid white;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .container {
       justify-content: space-around;
+    }
+
+    .container > div {
+      width: calc(100% - 1px); /* Adjust the width for smaller screens */
+      box-sizing: border-box;
+    }
+
+    .container > div:nth-child(3n) {
+      border-right: none;
     }
   }
 `;

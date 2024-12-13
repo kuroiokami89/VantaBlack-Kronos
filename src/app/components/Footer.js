@@ -1,11 +1,5 @@
 "use client";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faWhatsapp,
-  faFacebook,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import { NeutralFace } from "./fonts";
 
 export default function Footer() {
@@ -14,18 +8,10 @@ export default function Footer() {
       <footer id="footer" className={`borders ${NeutralFace.className}`}>
         <span>KRONOS</span>
         <div className="footer-link">
-          <a className="link link-btn">©2024 KRONOS - ALL RIGHTS RESERVED</a>
-          <div className="site-links">
-            <a className="link link-btn" href="/shop">
-              SHOP
-            </a>
-            <a className="link link-btn" href="/about">
-              ABOUT
-            </a>
-            <a className="link link-btn" href="#footer">
-              CONTACT
-            </a>
-          </div>
+          <a className="link link-btn copywright">
+            ©2024 KRONOS - ALL RIGHTS RESERVED
+          </a>
+          <div className="site-links"></div>
           <div className="social-links">
             <a
               className="link-btn"

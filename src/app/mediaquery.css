@@ -6,6 +6,15 @@
   h2 {
     line-height: 1.05;
   }
+
+  #footer span {
+    font-size: 20rem;
+  }
+
+  .container > div {
+    width: calc(50% - 1px); /* Adjust the width for smaller screens */
+    box-sizing: border-box;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -117,19 +126,22 @@
   #footer {
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    height: 50vh !important;
-    gap: 50px;
+    /* height: 50vh !important; */
+    gap: 30px;
+    padding: 20px;
   }
 
   .footer-link {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 15px;
   }
 
   .social-links,
   .site-links {
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   #contact-form h2 {
@@ -137,7 +149,12 @@
   }
 
   #footer span {
-    font-size: 1.2rem !important;
+    font-size: 5rem !important;
+  }
+
+  .copywright {
+    font-size: 1rem !important;
+    text-align: left;
   }
 
   #row-products-container {
