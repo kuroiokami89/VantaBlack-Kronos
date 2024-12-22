@@ -81,7 +81,7 @@ export default function Header() {
     <StyledHeader id="header2" className={`${NeutralFace.className}`}>
       <div className="header-container">
         <a id="logo" className="link-btn" href="/">
-          KRONOS
+          KRONOS!
         </a>
         <div className="header-anchors">
           <a className="link link-btn" href="/shop">
