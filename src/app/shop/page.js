@@ -19,24 +19,25 @@ const StyledShop = styled.div`
 
   .container {
     margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
     border-top: 1px solid #fff;
+    box-sizing: border-box;
   }
 
   .container > div {
-    width: calc(33.3333% - 1px);
     box-sizing: border-box;
     border-bottom: 1px solid #fff;
     border-right: 1px solid #fff;
   }
 
+  /* Remove the right border for the last item in each row */
   .container > div:nth-child(3n) {
     border-right: none;
   }
 
+  /* Remove the bottom border for the last row */
   .container > div:nth-last-child(-n + 3) {
     border-bottom: none;
   }

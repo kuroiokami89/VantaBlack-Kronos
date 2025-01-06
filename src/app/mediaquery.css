@@ -12,8 +12,12 @@
   }
 
   .container > div {
-    width: calc(50% - 1px); /* Adjust the width for smaller screens */
-    box-sizing: border-box;
+    width: 100% !important;
+    border-right: 0;
+  }
+
+  #shop .container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -201,6 +205,10 @@
 
   .contact-img img {
     width: 100%;
+  }
+
+  #shop .container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
