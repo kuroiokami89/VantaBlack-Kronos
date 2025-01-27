@@ -65,7 +65,14 @@
   }
 
   .prd-page-block {
-    margin: 0 25px;
+    flex-direction: column-reverse;
+  }
+
+  .prd-container {
+    position: unset;
+    height: auto;
+    padding: 35px 15px;
+    border-top: 1px solid white;
   }
 
   .prd-page-block h1 {
@@ -130,7 +137,6 @@
   #footer {
     flex-direction: column;
     text-align: center;
-    /* height: 50vh !important; */
     gap: 30px;
     padding: 20px;
   }

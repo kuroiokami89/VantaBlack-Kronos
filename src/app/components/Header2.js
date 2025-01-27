@@ -34,8 +34,8 @@ const StyledOverlay = styled.div`
   z-index: 9999;
 
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
 `;
 
 const OverlayContent = styled.div`

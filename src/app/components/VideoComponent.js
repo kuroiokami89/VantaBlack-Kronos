@@ -40,16 +40,15 @@ const StyledVideoComponent = styled.div`
   }
 
   .mute-button {
-    padding: 10px 15px;
     background: #080808;
     color: #faf9f6;
     border: solid 1px #faf9f6;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     z-index: 2;
     position: absolute;
     bottom: 30px;
-    left: 50px;
+    left: 30px;
   }
 `;
 

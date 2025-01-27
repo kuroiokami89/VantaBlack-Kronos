@@ -16,9 +16,7 @@ body {
   color: #faf9f6;
   background: #080808;
   width: 100%;
-  min-height: 100vh; /* Ensure body covers the full viewport height */
-  /* border-left: 1px solid white;
-  border-right: 1px solid white; */
+  min-height: 100vh;
 }
 
 ::selection {
@@ -33,33 +31,30 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #272727;
+  background: #000;
+  border-left: 1px solid white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #50c878;
+  border: 1px solid white;
+  border-left: 0;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #fff;
 }
 
 .blocco {
   margin: 0 50px;
   margin-bottom: 200px !important;
 }
-
-/* .borders {
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-} */
 
 a {
   text-decoration: none;
@@ -76,7 +71,6 @@ a {
 
 .link-btn:hover {
   color: rgba(255, 255, 255, 0.45);
-  /* color: #50c878; */
 }
 
 .slide-but {
@@ -95,16 +89,16 @@ li {
 /** INZIO STILE HEADER **/
 #header {
   position: fixed;
-  top: 30px; /* Distance from the top */
+  top: 30px;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%);
   z-index: 99;
   background: rgba(0, 0, 0, 1);
   padding: 15px 30px;
   display: flex;
   flex-direction: column;
   border: 1px solid white;
-  box-sizing: border-box; /* Ensures padding doesn't affect centering */
+  box-sizing: border-box;
 }
 
 .header-container {
@@ -230,11 +224,13 @@ li {
 }
 
 .buy-btn {
+  cursor: pointer;
+  padding: 20px 30px;
   border: 1px solid #faf9f6;
   background: #000;
   color: #faf9f6;
   padding: 15px 25px;
-  width: fit-content;
+  width: 100%;
   transition: background 0.45s ease-in, color 0.45s ease-in,
     border 0.45s ease-in;
 }
@@ -243,11 +239,6 @@ li {
   background: #faf9f6;
   color: #000;
   border: 1px solid #000;
-}
-
-.line {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  width: 700px;
 }
 
 .prd-title {
@@ -261,7 +252,6 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 30px;
 }
 
 .prd-page h1 {
@@ -270,65 +260,26 @@ li {
 
 .prd-page-block {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 0 50px;
 }
 
 .prd-container {
-  overflow: hidden;
+  overflow: visible;
   display: flex;
-  gap: 100px;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: baseline;
-  border-top: 1px solid white;
+  position: sticky;
+  top: 75px;
+  padding: 0 30px;
+  padding-top: 30px;
+  border-top: white 1px solid;
+  height: 26vw;
+  gap: 60px;
 }
 
-.prd-description {
-  border-right: 1px solid white;
-}
-
-.prd-description,
-.prd-specs {
-  padding-top: 50px;
-  flex: 0 0 50%;
-}
-
-.prd-specs-modal,
-.prd-warranty-modal {
-  padding: 30px 0;
-  border-bottom: white 1px solid;
-  cursor: pointer;
-}
-
-.prd-specs-modal {
-  padding-top: 0;
-}
-
-.prd-specs p,
-.modal-specs-paragraph {
-  margin: 30px 0;
-}
-
-.modal-specs-paragraph,
-.modal-warranty-paragraph {
-  word-wrap: break-word;
-  transition: opacity 0.5s ease, visibility 0s 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal-specs-paragraph.open,
-.modal-warranty-paragraph.open {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s ease;
-}
-
-.modal-specs-paragraph.closed,
-.modal-warranty-paragraph.closed {
-  display: none;
-  opacity: 0;
+.parent-container {
+  height: auto;
+  flex: 0 0 30%;
 }
 
 /* FINE STILE PRODUCT PAGE */
@@ -384,7 +335,7 @@ li {
 .contact-section::after {
   content: "";
   position: absolute;
-  bottom: -20px; /* Adds space between the content and the border */
+  bottom: -20px;
   left: 0;
   width: 100%;
   border-bottom: 1px solid white;
@@ -423,7 +374,6 @@ li {
 }
 
 /* CHECKOUT STYLE */
-
 .mute-button {
   background: transparent !important;
   border: 0 !important;
