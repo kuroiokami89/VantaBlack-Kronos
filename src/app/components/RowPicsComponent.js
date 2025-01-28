@@ -25,6 +25,7 @@ const StyledRowPicsComponent = styled.div`
     flex-direction: column;
     margin: 50px 0;
     border-right: 0;
+    flex: unset;
   }
 `;
 

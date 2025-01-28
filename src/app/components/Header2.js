@@ -108,8 +108,8 @@ export default function Header() {
         <div ref={overlayRef}>
           <OverlayContent>
             <a onClick={closeNav}>X</a>
-            <a href="/about">About</a>
             <a href="/shop">Shop</a>
+            <a href="/about">About</a>
             <a href="/contact">Contact</a>
           </OverlayContent>
         </div>

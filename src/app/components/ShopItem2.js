@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { NeutralFace, NeutralFaceBold } from "./fonts";
 import styled from "styled-components";
 
-const StyledShopItem2 = styled.div`
+const StyledShopItem = styled.div`
   .shop-item {
     display: flex;
     flex-direction: column;
@@ -59,7 +59,7 @@ const StyledShopItem2 = styled.div`
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
-export default function ShopItem2({ link, imgClass, brand, model, price }) {
+export default function ProjectItem({ link, imgClass, brand, model, price }) {
   const projectRef = useRef(null);
 
   useEffect(() => {
@@ -84,7 +84,7 @@ export default function ShopItem2({ link, imgClass, brand, model, price }) {
   }, []);
 
   return (
-    <StyledShopItem2>
+    <StyledShopItem>
       <a href={link} className="shop-item">
         <img className="shop-item-img" src={`${imgClass}`} />
         <div className="shop-item-text">
@@ -93,6 +93,6 @@ export default function ShopItem2({ link, imgClass, brand, model, price }) {
           <span className={`${NeutralFace.className}`}>PRICE : {price}</span>
         </div>
       </a>
-    </StyledShopItem2>
+    </StyledShopItem>
   );
 }

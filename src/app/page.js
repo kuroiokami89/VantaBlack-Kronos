@@ -6,6 +6,7 @@ import PromoProduct from "./components/PromoProduct";
 import BrandsRow from "./components/BrandsRow";
 import ContactForm from "./components/ContactForm";
 import BestSellers from "./components/BestSellersComponent";
+import Slider from "./components/SliderComponent";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         subTitle={"SHOP BASED IN EUROPE - ITALY"}
         showMuteButton={false}
       />
-      {/* <BrandsRow /> */}
+      <Slider />
       <PromoProduct
         img="/Rolex-Sky-Dweller.jpg"
         title="Rolex Sky Dweller"
@@ -26,7 +27,7 @@ export default function Home() {
         }
         button="BUY NOW"
       />
-      {/* <RowProducts /> */}
+      <RowProducts />
       {/* <BestSellers /> */}
       <ContactForm />
     </>
