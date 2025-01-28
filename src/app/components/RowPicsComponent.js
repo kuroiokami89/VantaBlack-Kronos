@@ -6,6 +6,7 @@ const StyledRowPicsComponent = styled.div`
   overflow: hidden;
   border-right: white 1px solid;
   border-top: white 1px solid;
+  flex: 0 0 70%;
 
   img {
     // cursor: pointer;

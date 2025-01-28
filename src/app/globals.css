@@ -260,7 +260,7 @@ li {
 
 .prd-page-block {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .prd-container {
@@ -279,7 +279,8 @@ li {
 
 .parent-container {
   height: auto;
-  flex: 0 0 30%;
+  /* flex: 0 0 30%; */
+  flex: 1;
 }
 
 /* FINE STILE PRODUCT PAGE */
