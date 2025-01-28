@@ -46,7 +46,10 @@ export default function PromoProduct({ img, title, text, button }) {
       <div className={`promo-product-text ${CreatoDisplayLight.className}`}>
         <h2 className={`${NeutralFace.className}`}>{title}</h2>
         <p>{text}</p>
-        <a href="#" className="buy-btn">
+        <a
+          href="http://localhost:3000/products/rolex-sky-dweller"
+          className="buy-btn"
+        >
           {button}
         </a>
       </div>

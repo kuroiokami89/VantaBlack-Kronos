@@ -6,15 +6,15 @@ import styled from "styled-components";
 import ContactForm from "../components/ContactForm";
 
 const StyledShop = styled.div`
-  padding-top: 150px;
+  padding-top: 75px;
 
   h1 {
-    padding-left: 30px;
-    font-size: 3rem;
+    padding: 25px 30px;
+    font-size: 4rem;
+    border-top: 1px solid white;
   }
 
   .container {
-    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
@@ -86,6 +86,13 @@ export default function Shop() {
       <h1>SHOP</h1>
       <div className="container">
         <ShopItem
+          link="/products/rolex-sky-dweller"
+          imgClass="/products-img/sky-dweller/sky-min.png"
+          brand="Rolex"
+          model="Sky Dweller"
+          price="10.000 £"
+        />
+        <ShopItem
           link="/products/omega-seamaster"
           imgClass="/products-img/omega-seamaster/omega-seamaster-aqua-terra.png"
           brand="Omega"
@@ -105,13 +112,6 @@ export default function Shop() {
           brand="Rolex"
           model="Submariner"
           price="100 £"
-        />
-        <ShopItem
-          link="/product"
-          imgClass="/products-img/rolex-submariner/Rolex.png"
-          brand="Rolex"
-          model="Vantablack Model"
-          price="10.000 £"
         />
         <ShopItem
           link="/product"

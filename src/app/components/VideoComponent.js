@@ -44,7 +44,6 @@ const StyledVideoComponent = styled.div`
     color: #faf9f6;
     border: solid 1px #faf9f6;
     cursor: pointer;
-    font-size: 1rem;
     z-index: 2;
     position: absolute;
     bottom: 30px;
