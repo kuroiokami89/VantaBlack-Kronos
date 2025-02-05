@@ -42,6 +42,21 @@ const StyledServices = styled.div`
     .services-container {
       grid-template-columns: repeat(1, 1fr);
     }
+
+    .service {
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid white;
+    }
+
+    .services-container > *:not(:first-child) {
+      border-left: none;
+      border-right: none;
+    }
+
+    .service:last-child {
+      border-bottom: none;
+    }
   }
 `;
 
@@ -51,6 +66,7 @@ export default function Services() {
       <h2>OUR SERVICES</h2>
       <div className={`services-container ${NeutralFace.className}`}>
         <div className="service">
+          <img src="/Warranty Logo.svg" alt="Warranty" />
           <h3>2 year Warranty</h3>
           <p>
             We give a two-year warranty on all our watches. Brand new watches
@@ -58,7 +74,7 @@ export default function Services() {
           </p>
         </div>
         <div className="service">
-          <img src="/Cart icon.svg" alt="Shipping" />
+          <img src="/Cart icon 1.svg" alt="Shipping" />
           <h3>Free shipping & returns</h3>
           <p>
             Enjoy free next-day UK delivery and worldwide shipping. Return any

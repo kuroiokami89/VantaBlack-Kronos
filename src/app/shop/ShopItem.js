@@ -11,16 +11,15 @@ const StyledShopItem = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 650px;
-    width: 630px;
-    padding: 25px;
+    height: 600px;
+    padding: 30px;
     position: relative;
   }
 
   .shop-item-img {
     width: 400px;
     height: auto;
-    margin: auto;
+    margin: 0 auto;
     display: block;
   }
 
@@ -43,16 +42,12 @@ const StyledShopItem = styled.div`
     }
 
     .shop-item-img {
-      width: 250px;
-      margin: 0;
+      width: 300px;
+      margin: 0 auto;
     }
   }
 
   @media screen and (max-width: 480px) {
-    .shop-item,
-    .shop-item-img {
-      width: 100%;
-    }
   }
 `;
 

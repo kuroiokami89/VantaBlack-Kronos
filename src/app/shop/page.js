@@ -103,6 +103,7 @@ const StyledShop = styled.div`
   @media screen and (max-width: 768px) {
     h1 {
       border-bottom: 1px solid white;
+      padding: 25px 15px;
     }
 
     .container {
