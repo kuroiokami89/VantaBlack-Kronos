@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  NeutralFace,
-  NeutralFaceBold,
-  CreatoDisplayLight,
-} from "../components/fonts";
+import { NeutralFace } from "../components/fonts";
 import ContactForm from "../components/ContactForm";
 
 export default function Contact() {

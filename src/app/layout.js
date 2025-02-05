@@ -7,7 +7,7 @@ import HeadComponent from "./components/HeadComponent";
 import Footer from "./components/Footer";
 import dynamic from "next/dynamic";
 
-const Header = dynamic(() => import("./components/Header2"), {
+const Header = dynamic(() => import("./components/Header"), {
   ssr: false, // Prevent server-side rendering for the Header component
 });
 

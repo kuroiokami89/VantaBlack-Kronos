@@ -2,15 +2,6 @@
 }
 
 @media screen and (max-width: 1450px) {
-  h1,
-  h2 {
-    line-height: 1.05;
-  }
-
-  #footer span {
-    font-size: 20rem;
-  }
-
   .container > div {
     width: 100% !important;
     border-right: 0;
@@ -18,6 +9,10 @@
 
   #shop .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .prd-container {
+    height: auto;
   }
 }
 
@@ -37,27 +32,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-  }
-
+  h3,
   h2 {
-    font-size: 2.5rem !important;
-    line-height: unset;
-    margin-bottom: 20px !important;
-    line-height: 1.1;
-  }
-
-  h3 {
-    font-size: 1.5rem !important;
-    line-height: unset;
-    margin-bottom: 20px !important;
-  }
-
-  p {
-    font-size: 1.25rem;
-    line-height: 1.4;
+    margin-bottom: 0 !important;
   }
 
   .blocco {
@@ -75,17 +52,8 @@
     border-top: 1px solid white;
   }
 
-  .prd-page-block h1 {
-    font-size: 3rem;
-  }
-
-  .prd-title span {
-    font-size: 0.9rem;
-  }
-
   .prd-description {
     border-right: 0;
-    /* border-bottom: 1px solid white; */
   }
 
   .prd-specs {
@@ -154,19 +122,6 @@
     align-items: baseline;
   }
 
-  #contact-form h2 {
-    width: 100%;
-  }
-
-  #footer span {
-    font-size: 5rem !important;
-  }
-
-  .copywright {
-    font-size: 1rem !important;
-    text-align: left;
-  }
-
   #row-products-container {
     gap: 80px;
   }
@@ -186,23 +141,23 @@
     border-top: 0;
   }
 
+  #contact h1 {
+    padding: 25px 15px;
+  }
+
   .contact-container {
     flex-direction: column;
-    gap: 50px;
+    gap: 20px 15px !important;
+  }
+
+  #contact-form h2 {
+    width: 100%;
   }
 
   .contact-box {
     flex: none;
     border-right: 0;
     padding-right: 0;
-  }
-
-  #contact p {
-    font-size: 1rem !important;
-  }
-
-  #contact h1 {
-    font-size: 2.2rem;
   }
 
   .contact-img {

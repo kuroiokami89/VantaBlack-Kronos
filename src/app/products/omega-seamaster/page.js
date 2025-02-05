@@ -5,6 +5,7 @@ import VideoComponent from "../../components/VideoComponent";
 import RowPicsComponent from "@/app/components/RowPicsComponent";
 import ContactForm from "@/app/components/ContactForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BestSellers from "@/app/components/BestSellersComponent";
 
 export default function Product() {
   return (
@@ -47,6 +48,7 @@ export default function Product() {
           </div>
         </div>
       </div>
+      <BestSellers />
       <ContactForm />
     </div>
   );

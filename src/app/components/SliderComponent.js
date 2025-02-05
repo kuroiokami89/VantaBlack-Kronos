@@ -16,6 +16,13 @@ const slideAnimation = `
 const StyledSlider = styled.div`
   ${slideAnimation}
 
+  h2 {
+    padding: 30px 0;
+    border-top: 1px solid white;
+    text-align: center;
+    font-size: 4rem;
+  }
+
   .logos {
     overflow: hidden;
     padding: 30px 0px;
@@ -52,6 +59,12 @@ const StyledSlider = styled.div`
     height: 100px;
     margin-right: 200px;
   }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export default function Slider() {
@@ -80,6 +93,7 @@ export default function Slider() {
 
   return (
     <StyledSlider className={`${NeutralFace.className}`}>
+      <h2>OUR PARTNERS</h2>
       <div className="logos">
         <div className="logo_items">
           {logoImages.map((src, index) => (

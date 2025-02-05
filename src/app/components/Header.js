@@ -1,27 +1,84 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { NeutralFace } from "./fonts";
-import SlideButton from "react-slide-button";
+import styled from "styled-components";
+
+const StyledHeader = styled.div`
+  margin-top: 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid white;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 15px;
+    }
+  }
+`;
+
+const StyledOverlay = styled.div`
+  position: fixed;
+  width: 100%;
+  height: ${(props) => (props.isOpen ? "100%" : "0")};
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow: hidden;
+  transition: height 0.5s ease;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const OverlayContent = styled.div`
+  text-align: center;
+  color: #fff;
+
+  a {
+    display: block;
+    margin: 20px 0;
+    font-size: 36px;
+    text-decoration: none;
+    color: #fff;
+  }
+`;
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState({
-    mobileMenu: false,
-    cart: false,
-  });
+  const [isOpen, setIsOpen] = useState(false);
+  const overlayRef = useRef(null);
 
-  // Function to toggle both mobile menu and cart
-  const toggleElement = (element) => {
-    setIsOpen((prevState) => ({
-      ...prevState,
-      [element]: !prevState[element],
-    }));
-  };
+  const openNav = () => setIsOpen(true);
+  const closeNav = () => setIsOpen(false);
 
-  const [reset, setReset] = useState(0);
+  // Close overlay if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (overlayRef.current && !overlayRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
-    <header id="header" className={`${NeutralFace.className}`}>
+    <StyledHeader id="header2" className={`${NeutralFace.className}`}>
       <div className="header-container">
         <a id="logo" className="link-btn" href="/">
           KRONOS
@@ -38,74 +95,26 @@ export default function Header() {
           </a>
         </div>
         <div className="mobile-menu">
-          <a
-            className="link link-btn"
-            onClick={() => toggleElement("mobileMenu")}
-          >
+          <a className="link link-btn" onClick={openNav}>
             MENU
           </a>
         </div>
-        <a className="link link-btn" onClick={() => toggleElement("cart")}>
+        <a className="link link-btn" href="/cart">
           CART
         </a>
       </div>
 
-      {/* Cart Section */}
-      <div
-        className={`cart-menu menu-dropdown ${isOpen.cart ? "open" : "closed"}`}
-      >
-        <div className="cart-row">
-          <img className="cart-img" src="/OOZOO.png" />
-          <div className="cart-text">
-            <div>
-              <span>OOZOO</span>
-              <span>steel black</span>
-            </div>
-            <span>100 $</span>
-          </div>
+      <StyledOverlay isOpen={isOpen}>
+        <div ref={overlayRef}>
+          <OverlayContent>
+            <a onClick={closeNav}>X</a>
+            <a href="/shop">Shop</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/cart">Cart</a>
+          </OverlayContent>
         </div>
-        <div className="cart-row">
-          <img className="cart-img" src="/Rolex.png" />
-          <div className="cart-text">
-            <div>
-              <span>ROLEX</span>
-              <span>Sky Dweller</span>
-            </div>
-            <span>10.000 $</span>
-          </div>
-        </div>
-        <div className="cart-checkout">
-          <h3>SUBTOTAL</h3>
-          <div>
-            <h3>10.100 £</h3>
-          </div>
-        </div>
-        <SlideButton
-          mainText="PROCEED TO checkout"
-          overlayText=""
-          onSlideDone={() => {
-            console.log("Done!");
-          }}
-          reset={reset}
-        />
-      </div>
-
-      {/* Mobile Menu Section */}
-      <div
-        className={`mobile-menu menu-dropdown ${
-          isOpen.mobileMenu ? "open" : "closed"
-        }`}
-      >
-        <a className="link link-btn first-link" href="/shop">
-          SHOP
-        </a>
-        <a className="link link-btn" href="/about">
-          ABOUT
-        </a>
-        <a className="link link-btn" href="/contact">
-          CONTACT
-        </a>
-      </div>
-    </header>
+      </StyledOverlay>
+    </StyledHeader>
   );
 }

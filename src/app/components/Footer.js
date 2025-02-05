@@ -8,10 +8,6 @@ export default function Footer() {
       <footer id="footer" className={`borders ${NeutralFace.className}`}>
         <span>KRONOS</span>
         <div className="footer-link">
-          <a className="link link-btn copywright">
-            ©2024 KRONOS - ALL RIGHTS RESERVED
-          </a>
-          <div className="site-links"></div>
           <div className="social-links">
             <a
               className="link-btn"
@@ -23,6 +19,9 @@ export default function Footer() {
               FACEBOOK
             </a>
           </div>
+          <a className="link link-btn copywright">
+            ©2024 KRONOS - ALL RIGHTS RESERVED
+          </a>
         </div>
       </footer>
     </>

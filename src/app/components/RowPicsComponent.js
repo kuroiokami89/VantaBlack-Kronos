@@ -9,16 +9,11 @@ const StyledRowPicsComponent = styled.div`
   flex: 0 0 70%;
 
   img {
-    // cursor: pointer;
     flex: 0 0 33, 33%;
     width: 33, 33%;
     transition: transform 0.3s ease;
     position: relative;
     overflow: hidden;
-
-    // &:hover {
-    //   transform: scale(1.1);
-    // }
   }
 
   @media screen and (max-width: 768px) {
