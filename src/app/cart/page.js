@@ -69,10 +69,17 @@ const StyledCheckout = styled.div`
 
   .quantity-controller button,
   .quantity-controller span {
+    cursor: pointer;
     padding: 10px 15px;
     background: transparent;
     color: white;
     border: 0;
+    transition: color 0.5s ease-in, background 0.5s ease-in;
+  }
+
+  .quantity-controller button:hover {
+    background: white;
+    color: black;
   }
 
   .remove {
@@ -150,6 +157,7 @@ const StyledCheckout = styled.div`
     }
 
     h1 {
+      font-size: 2.2rem;
       padding: 25px 15px;
     }
 
@@ -160,6 +168,14 @@ const StyledCheckout = styled.div`
 
     .checkout-container {
       border-left: 0;
+    }
+
+    .payment-container {
+      flex-wrap: wrap;
+    }
+
+    .button {
+      padding: 10px 0px;
     }
   }
 `;
