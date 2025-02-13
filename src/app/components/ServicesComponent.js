@@ -75,7 +75,7 @@ export default function Services() {
           </p>
         </div>
         <div className="service">
-          <img src="/Cart icon 1.svg" alt="Shipping" />
+          <img src="/truck2.svg" alt="Shipping" />
           <h3>Free shipping & returns</h3>
           <p>
             Enjoy free next-day UK delivery and worldwide shipping. Return any
@@ -83,7 +83,7 @@ export default function Services() {
           </p>
         </div>
         <div className="service">
-          <img src="/Gear Icon.svg" alt="Gear" />
+          <img src="/gear.svg" alt="Gear" />
           <h3>Watch Customizations</h3>
           <p>
             If you're unable to visit our boutique, we also offer a free
