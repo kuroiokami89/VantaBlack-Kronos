@@ -1,7 +1,7 @@
-"use client"; // Required for styled-components and client-side logic
+"use client";
 
 import styled from "styled-components";
-import { NeutralFace, NeutralFaceBold } from "../components/fonts"; // Use correct font import
+import { NeutralFace, NeutralFaceBold } from "../components/fonts";
 
 const StyledCheckout = styled.div`
   display: flex;
@@ -28,19 +28,30 @@ const StyledCheckout = styled.div`
 
   .item {
     display: flex;
+    align-items: center;
     padding: 35px 0;
     font-size: 1.05rem;
     border-bottom: 1px solid white;
   }
 
   img {
-    width: 350px;
+    width: 250px;
   }
 
   .product-details {
     display: flex;
     flex-direction: column;
     gap: 15px;
+  }
+
+  .item-title {
+    font-size: 1.5rem;
+  }
+
+  .item-right {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
   }
 
   .cart-items {
@@ -52,6 +63,16 @@ const StyledCheckout = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5px;
+    border: 1px solid white;
+    width: fit-content;
+  }
+
+  .quantity-controller button,
+  .quantity-controller span {
+    padding: 10px 15px;
+    background: transparent;
+    color: white;
+    border: 0;
   }
 
   .remove {
@@ -65,14 +86,57 @@ const StyledCheckout = styled.div`
     border-right: 0;
   }
 
-  ul {
-    padding: 30px;
-    font-size: 1.15rem;
-    // border-bottom: 1px solid white;
+  .checkout-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  li {
-    margin-bottom: 40px;
+  .checkout-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .payment-container {
+    display: flex;
+    gap: 30px;
+  }
+
+  .payment-methods {
+    border-top: 1px solid white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .payment-methods img {
+    cursor: pointer;
+    padding: 2px 25px;
+    border: white 1px solid;
+    width: 100px;
+  }
+
+  .button {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px 100px;
+    border: 1px solid white;
+    text-align: center;
+    transition: background 0.25s ease-in, color 0.25s ease-in;
+  }
+
+  .button:hover {
+    background: white;
+    color: black;
+  }
+
+  .buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
   }
 
   @media (max-width: 768px) {
@@ -83,10 +147,6 @@ const StyledCheckout = styled.div`
 
     .item {
       gap: 20px;
-    }
-
-    .item-right {
-      padding: 0 15px;
     }
 
     h1 {
@@ -118,23 +178,46 @@ const ProductItem = ({
     <img src={imgSrc} alt={alt} />
     <div className="item-right">
       <div className="product-details">
-        <span className={`${NeutralFaceBold.className}`}>{name}</span>
-        <span>{code}</span>
+        <span className={`item-title ${NeutralFaceBold.className}`}>
+          {name}
+        </span>
         <span>COLOR: {color}</span>
         <span>EXTRAS: {extra}</span>
       </div>
-      <div className="quantity-controller">
-        <button>-</button>
-        <span>{quantity}</span>
-        <button>+</button>
+      <div className="buttons-container">
+        <div className="quantity-controller">
+          <button>-</button>
+          <span>{quantity}</span>
+          <button>+</button>
+        </div>
+        <div className="total">{(price * quantity).toFixed(2)}€</div>
       </div>
-      <div className="total">{(price * quantity).toFixed(2)}€</div>
-      <div className="remove">REMOVE</div>
     </div>
   </div>
 );
 
 export default function Cart() {
+  // Calculate subtotal dynamically
+  const products = [
+    {
+      price: 484.99,
+      quantity: 1,
+    },
+    {
+      price: 489.99,
+      quantity: 3,
+    },
+    {
+      price: 489.99,
+      quantity: 3,
+    },
+  ];
+
+  const subtotal = products.reduce(
+    (acc, product) => acc + product.price * product.quantity,
+    0
+  );
+
   return (
     <StyledCheckout className={`${NeutralFace.className}`} id="cart">
       <h1>MY CART</h1>
@@ -172,12 +255,26 @@ export default function Cart() {
           />
         </div>
         <div className="checkout-container">
-          <h2>CHECKOUT</h2>
-          <ul>
-            <li>SUBTOTAL 168.00$</li>
-            <li>COUNTRY USA</li>
-            <li>ORDER TOTAL 168.00$</li>
-          </ul>
+          <h2>TOTAL</h2>
+          <div className="checkout-info">
+            <div className="checkout-row">
+              <p>SUBTOTAL</p> <p>{subtotal.toFixed(2)}€</p>
+            </div>
+            <div className="checkout-row">
+              <p>COUNTRY</p> <p>USA</p>
+            </div>
+            <div className="checkout-row">
+              <p>ORDER TOTAL</p> <p>{subtotal.toFixed(2)}€</p>
+            </div>
+          </div>
+          <div className="payment-methods">
+            <a className="button">CHECKOUT</a>
+            <div className="payment-container">
+              <img src="/payments/gpay.png" alt="Gpay" />
+              <img src="/payments/applepay.png" alt="Applepay" />
+              <img src="/payments/master.png" alt="Mastercard" />
+            </div>
+          </div>
         </div>
       </div>
     </StyledCheckout>

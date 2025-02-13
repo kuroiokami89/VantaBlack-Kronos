@@ -35,7 +35,8 @@ const StyledServices = styled.div`
   }
 
   .service img {
-    width: 250px;
+    width: 300px;
+    height: 300px;
   }
 
   @media screen and (max-width: 768px) {
@@ -66,7 +67,7 @@ export default function Services() {
       <h2>OUR SERVICES</h2>
       <div className={`services-container ${NeutralFace.className}`}>
         <div className="service">
-          <img src="/Warranty Logo.svg" alt="Warranty" />
+          <img src="/Warranty Logo1.svg" alt="Warranty" />
           <h3>2 year Warranty</h3>
           <p>
             We give a two-year warranty on all our watches. Brand new watches
@@ -82,7 +83,8 @@ export default function Services() {
           </p>
         </div>
         <div className="service">
-          <h3>Free collection</h3>
+          <img src="/Gear Icon.svg" alt="Gear" />
+          <h3>Watch Customizations</h3>
           <p>
             If you're unable to visit our boutique, we also offer a free
             collection service to have your watch appraised.
