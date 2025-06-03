@@ -10,7 +10,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1;
 }
 
@@ -79,7 +79,7 @@ a {
   }
 
   h2 {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     line-height: unset;
     margin-bottom: 20px !important;
     line-height: 1.1;
@@ -97,7 +97,7 @@ a {
   }
 
   #footer span {
-    font-size: 5rem !important;
+    font-size: 5.1rem !important;
   }
 
   .copywright {

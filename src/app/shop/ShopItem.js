@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { NeutralFace, NeutralFaceBold } from "../components/fonts";
+import { NeutralFace } from "../components/fonts";
 import styled from "styled-components";
 
 const StyledShopItem = styled.div`

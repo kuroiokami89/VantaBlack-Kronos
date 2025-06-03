@@ -20,15 +20,6 @@ const StyledPromoProduct = styled.div`
     flex: 0 0 50%;
   }
 
-  // .button {
-  //   text-align: left;
-  //   width: 200px;
-  //   padding: 10px 15px;
-  //   background: #50c878;
-  //   font-size: 1.25rem;
-  //   color: black;
-  // }
-
   @media screen and (max-width: 768px) {
     .promo-product-text {
       padding: 50px 15px;

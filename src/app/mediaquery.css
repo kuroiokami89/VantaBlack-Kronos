@@ -105,19 +105,19 @@
   #footer {
     flex-direction: column;
     text-align: center;
-    gap: 30px;
+    gap: 15px;
     padding: 20px;
   }
 
   .footer-link {
-    flex-direction: column-reverse;
-    gap: 15px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .social-links,
   .site-links {
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     justify-content: space-between;
     align-items: baseline;
   }
@@ -170,6 +170,10 @@
 
   #shop .container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .promo-product-text {
+    gap: 30px;
   }
 }
 

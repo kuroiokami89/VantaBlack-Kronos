@@ -1,6 +1,6 @@
 "use client";
 
-import { NeutralFace, NeutralFaceBold } from "./fonts";
+import { NeutralFace } from "./fonts";
 
 export default function ContactForm() {
   return (

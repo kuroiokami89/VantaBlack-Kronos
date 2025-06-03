@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { NeutralFace, NeutralFaceBold } from "../components/fonts";
+import { NeutralFace } from "../components/fonts";
 
 const StyledServices = styled.div`
   text-align: center;

@@ -1,4 +1,4 @@
-import { NeutralFace, NeutralFaceBold } from "../components/fonts";
+import { NeutralFace } from "../components/fonts";
 import styled from "styled-components";
 
 // Define keyframes outside of the styled component

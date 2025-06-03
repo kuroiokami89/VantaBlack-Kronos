@@ -1,11 +1,7 @@
 "use client";
 
 import styled from "styled-components";
-import {
-  NeutralFace,
-  NeutralFaceBold,
-  CreatoDisplayLight,
-} from "../components/fonts";
+import { NeutralFaceBold, CreatoDisplayLight } from "../components/fonts";
 
 const StyledTextBlock = styled.div`
   padding: 100px 50px;

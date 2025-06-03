@@ -180,16 +180,7 @@ const StyledCheckout = styled.div`
   }
 `;
 
-const ProductItem = ({
-  imgSrc,
-  alt,
-  name,
-  code,
-  color,
-  extra,
-  price,
-  quantity,
-}) => (
+const ProductItem = ({ imgSrc, alt, name, color, extra, price, quantity }) => (
   <div className="item">
     <img src={imgSrc} alt={alt} />
     <div className="item-right">
