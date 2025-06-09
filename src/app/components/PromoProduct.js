@@ -22,6 +22,7 @@ const StyledPromoProduct = styled.div`
 
   @media screen and (max-width: 768px) {
     .promo-product-text {
+      gap: 30px;
       padding: 50px 15px;
     }
   }
