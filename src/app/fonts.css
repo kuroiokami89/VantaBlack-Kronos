@@ -75,7 +75,7 @@ a {
   }
 
   h2 {
-    font-size: 2rem !important;
+    font-size: 2.25rem !important;
     line-height: unset;
     margin-bottom: 20px !important;
     line-height: 1.1;
@@ -93,8 +93,7 @@ a {
   }
 
   .copywright {
-    font-size: 0.8rem !important;
-    text-align: left;
+    font-size: 1rem !important;
   }
 
   #contact p {
@@ -102,8 +101,14 @@ a {
   }
 
   #contact h1,
-  #shop h1 {
-    font-size: 2.2rem;
+  #shop h1,
+  #cart h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .checkout-container h2 {
+    text-align: center;
   }
 
   #contact-form h2 {

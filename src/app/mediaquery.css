@@ -103,23 +103,20 @@
   }
 
   #footer {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 15px;
     padding: 20px;
   }
 
   .footer-link {
-    flex-direction: column;
     gap: 20px;
   }
 
   .social-links,
   .site-links {
-    flex-direction: column;
     gap: 15px;
     justify-content: space-between;
-    align-items: baseline;
   }
 
   #row-products-container {
@@ -173,7 +170,8 @@
   }
 
   .promo-product-text {
-    border-left: 0;
+    border-left: 0 !important;
+    border-top: 1px solid white;
     gap: 30px;
   }
 }
