@@ -23,7 +23,7 @@ export default function Home() {
         text={
           "Lo Sky‑Dweller è un orologio elegante e tecnicamente raffinato, pensato per coloro che considerano il mondo come un territorio aperto, senza confini, in cui le barriere scompaiono. Permette ai viaggiatori di evitare le insidie dei cambi d’ora per essere sempre un passo avanti. Dal momento stesso in cui mettono piede a terra, sono pronti a iniziare una nuova avventura."
         }
-        button="BUY NOW"
+        button="ORDER NOW"
       />
       <BestSellers />
       <Slider />

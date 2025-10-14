@@ -173,6 +173,7 @@
   }
 
   .promo-product-text {
+    border-left: 0;
     gap: 30px;
   }
 }

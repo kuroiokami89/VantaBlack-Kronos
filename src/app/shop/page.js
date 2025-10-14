@@ -204,7 +204,7 @@ export default function Shop() {
     <StyledShop id="shop" className={`borders ${NeutralFace.className}`}>
       <div className="top">
         <h1>SHOP</h1>
-        <div className={`filters ${NeutralFace.className}`}>
+        {/* <div className={`filters ${NeutralFace.className}`}>
           <div>
             <label htmlFor="brand-select">Filter by Brand: </label>
             <select
@@ -240,7 +240,7 @@ export default function Shop() {
               max="100000"
             />
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="container">
         {filteredItems.map((item, index) => (

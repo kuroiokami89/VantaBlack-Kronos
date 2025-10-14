@@ -156,7 +156,7 @@ li {
 
 /** INIZIO STILE FOOTER **/
 #footer {
-  padding: 20px 50px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,22 +166,10 @@ li {
   cursor: pointer;
 }
 
-#footer svg {
-  font-size: 1.8rem;
-}
-
-#footer span {
-  font-size: 26rem;
-}
-
-.footer-container span {
-  margin-bottom: 20px !important;
-}
-
 .social-links,
 .site-links {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .footer-link {
@@ -206,7 +194,7 @@ li {
   background: #000;
   color: #faf9f6;
   padding: 15px 25px;
-  width: 100%;
+  width: fit-content;
   transition: background 0.45s ease-in, color 0.45s ease-in,
     border 0.45s ease-in;
 }

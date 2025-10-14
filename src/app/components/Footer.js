@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <>
       <footer id="footer" className={`borders ${NeutralFace.className}`}>
-        <span>KRONOS</span>
         <div className="footer-link">
           <div className="social-links">
             <a
@@ -19,9 +18,7 @@ export default function Footer() {
               FACEBOOK
             </a>
           </div>
-          <a className="link link-btn copywright">
-            ©2024 KRONOS - ALL RIGHTS RESERVED
-          </a>
+          <a className="link link-btn copywright">©2025 KRONOS</a>
         </div>
       </footer>
     </>

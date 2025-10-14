@@ -5,6 +5,7 @@ import { NeutralFace, CreatoDisplayLight } from "./fonts";
 
 const StyledPromoProduct = styled.div`
   display: flex;
+  border-top: 1px solid white;
 
   .promo-product-text {
     display: flex;
@@ -13,6 +14,7 @@ const StyledPromoProduct = styled.div`
     flex-direction: column;
     justify-content: center;
     gap: 50px;
+    border-left: 1px solid white;
   }
 
   img {
