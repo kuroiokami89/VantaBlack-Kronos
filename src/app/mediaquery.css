@@ -109,16 +109,6 @@
     padding: 20px;
   }
 
-  .footer-link {
-    gap: 20px;
-  }
-
-  .social-links,
-  .site-links {
-    gap: 15px;
-    justify-content: space-between;
-  }
-
   #row-products-container {
     gap: 80px;
   }

@@ -165,18 +165,6 @@ li {
 #footer a {
   cursor: pointer;
 }
-
-.social-links,
-.site-links {
-  display: flex;
-  gap: 30px;
-}
-
-.footer-link {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
 /** FINE STILE FOOTER **/
 
 /* INIZIO STILE PRODUCT PAGE */

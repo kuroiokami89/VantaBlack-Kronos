@@ -16,7 +16,6 @@ export default function Footer() {
         <a className="link-btn link" href="https://github.com/kuroiokami89">
           FACEBOOK
         </a>
-        {/* <a className="link link-btn copywright">©2025 KRONOS</a> */}
       </footer>
     </>
   );
