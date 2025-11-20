@@ -10,12 +10,23 @@ To get started with this project, follow these steps:
 2. Install the required dependencies by running `npm install` or `yarn install` in the project's root directory.
 3. Start the development server using the provided start command.
 
-### Start the Development Server
+## Getting Started
 
-To start the development server, run the following command in the project's root directory:
+First, run the development server:
 
-- Using Yarn: `yarn dev`
-- Using npm: `npm run dev`
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 ## Dependencies
 
