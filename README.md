@@ -7,17 +7,22 @@ This is a demo project that I created for personal use to showcase my skills. It
 To get started with this project, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Install the required dependencies using a package manager like npm or yarn.
-3. Configure any necessary environment variables.
-4. Start the project using the provided start command.
+2. Install the required dependencies by running `npm install` or `yarn install` in the project's root directory.
+3. Start the development server using the provided start command.
+
+### Start the Development Server
+
+To start the development server, run the following command in the project's root directory:
+
+- Using Yarn: `yarn dev`
+- Using npm: `npm run dev`
 
 ## Dependencies
 
 The following dependencies are required to run this project:
 
-- [React](https://reactjs.org/)
-- [Next.js](https://nextjs.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
+- React
+- Next.js
 
 ## Usage
 
