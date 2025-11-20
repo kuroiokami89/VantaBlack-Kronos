@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Demo Project - Showcasing Skills
+
+This is a demo project that I created for personal use to showcase my skills. It is designed to provide a practical demonstration of my abilities and to help potential employers or clients understand my capabilities.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this project, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository to your local machine.
+2. Install the required dependencies using a package manager like npm or yarn.
+3. Configure any necessary environment variables.
+4. Start the project using the provided start command.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The following dependencies are required to run this project:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## Learn More
+## Usage
 
-To learn more about Next.js, take a look at the following resources:
+To use this project, simply start the development server using the provided start command. This will launch the application in your default web browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are welcome! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the [MIT License](LICENSE).
