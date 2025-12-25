@@ -6,7 +6,7 @@ const StyledBestSellers = styled.div`
 
   h2 {
     font-size: 4rem;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     padding: 25px 0;
   }
 
@@ -27,12 +27,12 @@ const StyledBestSellers = styled.div`
   }
 
   .container > *:not(:first-child) {
-    border-left: 1px solid white;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .item {
     height: 600px;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +67,7 @@ const StyledBestSellers = styled.div`
     align-items: baseline;
     gap: 10px;
     padding: 10px 0;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     position: absolute;
     z-index: 2;
     background: rgba(0, 0, 0, 0.5);

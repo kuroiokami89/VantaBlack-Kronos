@@ -12,7 +12,7 @@ const StyledHeader = styled.div`
   padding: 15px 30px;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid white;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   box-sizing: border-box;
 
   @media screen and (max-width: 768px) {

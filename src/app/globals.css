@@ -47,7 +47,7 @@ a {
 }
 
 .link-btn:hover {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .slide-but {
@@ -74,7 +74,7 @@ li {
   padding: 15px 30px;
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   box-sizing: border-box;
 }
 
@@ -177,7 +177,7 @@ li {
 .buy-btn {
   cursor: pointer;
   padding: 20px 30px;
-  border: 1px solid #faf9f6;
+  border: 1px solid rgba(255, 255, 255, 0.25);
   background: #000;
   color: #faf9f6;
   padding: 15px 25px;
@@ -222,7 +222,7 @@ li {
   top: 75px;
   padding: 0 30px;
   padding-top: 30px;
-  border-top: white 1px solid;
+  border-top: rgba(255, 255, 255, 0.25) 1px solid;
   height: 26vw;
   gap: 60px;
 }
@@ -247,12 +247,12 @@ li {
 }
 
 #contact h1 {
-  border-top: 1px solid white;
+  /*border-top: 1px solid rgba(255, 255, 255, 0.25);*/
   padding: 25px 30px;
 }
 
 .contact-container {
-  border-top: 1px solid white;
+  /*border-top: 1px solid rgba(255, 255, 255, 0.25);*/
   display: flex;
   padding: 0 30px;
 }
@@ -261,7 +261,7 @@ li {
   flex: 0 0 45%;
   padding-right: 80px;
   padding-top: 50px;
-  border-right: 1px solid white;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -289,7 +289,7 @@ li {
   bottom: -20px;
   left: 0;
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 /* FINE STILE CONTACT */
@@ -303,8 +303,8 @@ li {
   align-items: center;
   justify-content: center;
   gap: 60px;
-  border-bottom: solid white 1px;
-  border-top: solid white 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 #contact-form input {
@@ -315,7 +315,7 @@ li {
   width: 70%;
   background: transparent;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 #contact-form h2 {

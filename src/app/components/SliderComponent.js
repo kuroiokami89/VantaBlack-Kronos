@@ -18,7 +18,7 @@ const StyledSlider = styled.div`
 
   h2 {
     padding: 30px 0;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     text-align: center;
     font-size: 4rem;
   }
@@ -29,8 +29,8 @@ const StyledSlider = styled.div`
     white-space: nowrap;
     position: relative;
     padding: 60px 0;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .logos:before {

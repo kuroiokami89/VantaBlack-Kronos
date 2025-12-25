@@ -42,7 +42,7 @@ const StyledVideoComponent = styled.div`
   .mute-button {
     background: #080808;
     color: #faf9f6;
-    border: solid 1px #faf9f6;
+    border: solid 1px rgba(255, 255, 255, 0.25);
     cursor: pointer;
     z-index: 2;
     position: absolute;

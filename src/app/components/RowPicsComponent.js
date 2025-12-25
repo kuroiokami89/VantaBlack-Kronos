@@ -4,8 +4,8 @@ const StyledRowPicsComponent = styled.div`
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  border-right: white 1px solid;
-  border-top: white 1px solid;
+  border-right: rgba(255, 255, 255, 0.25) 1px solid;
+  border-top: rgba(255, 255, 255, 0.25) 1px solid;
   flex: 0 0 70%;
 
   img {

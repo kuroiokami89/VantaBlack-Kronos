@@ -12,14 +12,14 @@ const StyledCheckout = styled.div`
     padding: 25px 30px;
     font-size: 4rem;
     text-align: left;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   h2 {
     padding: 25px 30px;
     font-size: 3rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .cart-container {
@@ -31,7 +31,7 @@ const StyledCheckout = styled.div`
     align-items: center;
     padding: 35px 0;
     font-size: 1.05rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   img {
@@ -63,7 +63,7 @@ const StyledCheckout = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: fit-content;
   }
 
@@ -88,7 +88,7 @@ const StyledCheckout = styled.div`
 
   .checkout-container {
     flex: 1;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-top: 0;
     border-right: 0;
   }
@@ -112,7 +112,7 @@ const StyledCheckout = styled.div`
   }
 
   .payment-methods {
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -122,7 +122,7 @@ const StyledCheckout = styled.div`
   .payment-methods img {
     cursor: pointer;
     padding: 2px 25px;
-    border: white 1px solid;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     width: 100px;
   }
 

@@ -29,28 +29,28 @@ const StyledShop = styled.div`
   .filters input {
     padding: 5px 10px;
     font-size: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 4px;
   }
 
   .top {
     width: 100%;
     display: flex;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    border-top: 1px solid #fff;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
     box-sizing: border-box;
   }
 
   .container > div {
     box-sizing: border-box;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   /* Remove the right border for the last item in each row */
@@ -68,7 +68,7 @@ const StyledShop = styled.div`
   .filters option {
     padding: 10px 20px;
     font-size: 1rem;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 0;
     color: white;
     background: black;
@@ -92,17 +92,17 @@ const StyledShop = styled.div`
     }
 
     .container > div:nth-child(3n) {
-      border-right: 1px solid white;
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .container > div:nth-last-child(-n + 3) {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
   }
 
   @media screen and (max-width: 768px) {
     h1 {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
       padding: 25px 15px;
     }
 

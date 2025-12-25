@@ -7,7 +7,7 @@ const StyledServices = styled.div`
   h2 {
     font-size: 4rem;
     padding: 30px 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   p {
@@ -31,7 +31,7 @@ const StyledServices = styled.div`
   }
 
   .services-container > *:not(:first-child) {
-    border-left: 1px solid white;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
   }
 
   .service img {
@@ -47,7 +47,7 @@ const StyledServices = styled.div`
     .service {
       border-left: none;
       border-right: none;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     }
 
     .services-container > *:not(:first-child) {
