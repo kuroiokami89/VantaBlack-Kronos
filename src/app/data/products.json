@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rolex-sky-dweller",
+    "slug": "rolex-sky-dweller",
+    "brand": "Rolex",
+    "model": "Sky-Dweller",
+    "thumbnail": "/products-img/sky-dweller/sky-min.png",
+    "gallery": [
+      "/products-img/sky-dweller/sky-2.jpg",
+      "/products-img/sky-dweller/sky-3.jpg",
+      "/products-img/sky-dweller/sky-4.jpg"
+    ],
+    "video": "/products-img/sky-dweller/Rolex Sky-Dweller.mp4",
+    "description": "The Oyster Perpetual Sky-Dweller is designed for global travelers. Featuring the annual Saros calendar and Ring Command system, it displays two time zones, date, and month with intuitive precision.",
+    "price": 10000
+  },
+  {
+    "id": "omega-seamaster-aqua-terra",
+    "slug": "omega-seamaster-aqua-terra",
+    "brand": "Omega",
+    "model": "Seamaster Aqua Terra",
+    "thumbnail": "/products-img/omega-seamaster/omega-seamaster-aqua-terra.png",
+    "gallery": [
+      "/products-img/omega-seamaster/omega-seamaster-aqua-terra-1.jpg",
+      "/products-img/omega-seamaster/omega-seamaster-aqua-terra-2.jpg",
+      "/products-img/omega-seamaster/omega-seamaster-aqua-terra-3.jpg"
+    ],
+    "video": "/products-img/omega-seamaster/Omega-Watch.mp4",
+    "description": "The Seamaster Aqua Terra features a 38 mm stainless steel case, teak-pattern dial, and METAS-certified Master Chronometer caliber 8800, combining precision with understated elegance.",
+    "price": 7000
+  },
+  {
+    "id": "oozoo-c11412-black",
+    "slug": "oozoo-c11412-black",
+    "brand": "Oozoo",
+    "model": "C11412",
+    "thumbnail": "/products-img/oozoo-black/OOZOO.png",
+    "gallery": [
+      "/products-img/oozoo-black/C11304-2.jpg",
+      "/products-img/oozoo-black/C11304-3_720x.jpg",
+      "/products-img/oozoo-black/Verpakking-5_1d5954d2-9c23-4ba1-b8bf-354ebe975f48_720x.jpg"
+    ],
+    "video": "/products-img/oozoo-black/OOZOO.mp4",
+    "description": "The OOZOO C11412 offers modern aesthetics and affordability, powered by a reliable quartz movement and designed for everyday wear.",
+    "price": 100
+  },
+  {
+    "id": "rolex-submariner",
+    "slug": "rolex-submariner",
+    "brand": "Rolex",
+    "model": "Submariner",
+    "thumbnail": "/products-img/rolex-submariner/Rolex.png",
+    "gallery": [
+      "/products-img/rolex-submariner/2110431_sw6_theme2_full.jpg",
+      "/products-img/rolex-submariner/2110431_sw6_theme3_full.jpg",
+      "/products-img/rolex-submariner/2110431_sw6_zaMarketing_full.jpg"
+    ],
+    "video": "/products-img/rolex-submariner/Rolex-Submariner.mp4",
+    "description": "The iconic Rolex Submariner is the benchmark for diving watches, combining extreme durability, water resistance, and timeless luxury design.",
+    "price": 9500
+  }
+]
